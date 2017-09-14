@@ -1,0 +1,127 @@
+body {
+    width: 800px;
+    background: #008900 url("../img/pattern.png");
+    font-family: Verdana, serif;
+}
+
+header {
+    background-color: #033203;
+    border: solid 1px #fff;
+    border-radius: 10px;
+    color: #fff;
+}
+
+header > h1 {
+    margin: 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 24px;
+}
+header > p {
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+main {
+    margin-bottom: -20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+blockquote p {
+    font-size: 12px;
+    text-align: right;
+    word-spacing: 1px;
+}
+
+blockquote span {
+    color: blue;
+}
+
+blockquote p::before {
+    content: "«";
+}
+blockquote p::after {
+    content: "»";
+}
+
+article p:nth-child(3) {
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+article p:nth-child(4) {
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-align: justify;
+    background-color: #8CFD8E;
+}
+
+article p:nth-child(5) {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+article p:nth-child(9) {
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+.main_text_span {
+    font-style: italic;
+    font-weight: bold;
+    color: #C71E16;
+}
+
+.inner_span_first {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.inner_span_second {
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.staff_info :first-child {
+    text-align: center;
+    font-size: 19px;
+}
+
+.image_container {
+    width: 210px;
+    display: inline-block;
+}
+
+.image_container > p {
+    text-align: center;
+    color: blue;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: -2px;
+    margin-bottom: 22px;
+}
+
+.image_container > img {
+    background-color: #8CFD8E;
+    border-radius: 50%;
+    border: solid 4px #108713;
+}
+
+footer {
+    background-color: #033203;
+    padding-top: 5px;
+    border-top: dotted 5px #F30F18;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: #fff;
+}
