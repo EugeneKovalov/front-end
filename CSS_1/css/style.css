@@ -11,13 +11,13 @@ header {
     color: #fff;
 }
 
-header > h1 {
+.header-title {
     margin: 0;
     text-align: center;
     font-weight: 300;
     font-size: 24px;
 }
-header > p {
+.header-under-text {
     margin: 0;
     text-align: center;
     padding-top: 20px;
@@ -44,7 +44,7 @@ blockquote p {
 }
 
 blockquote span {
-    color: blue;
+    color: #0000FF;
 }
 
 blockquote p::before {
@@ -54,24 +54,24 @@ blockquote p::after {
     content: "»";
 }
 
-article p:nth-child(3) {
+.p-first {
     letter-spacing: 2px;
     line-height: 30px;
 }
 
-article p:nth-child(4) {
+.p-second {
     letter-spacing: 1px;
     word-spacing: 5px;
     text-align: justify;
     background-color: #8CFD8E;
 }
 
-article p:nth-child(5) {
+.p-third {
     letter-spacing: 2px;
     word-spacing: 5px;
 }
 
-article p:nth-child(9) {
+.p-fourth {
     letter-spacing: 1px;
     word-spacing: 3px;
 }
@@ -104,7 +104,7 @@ article p:nth-child(9) {
 
 .image_container > p {
     text-align: center;
-    color: blue;
+    color: #0000FF;
     font-weight: 600;
     font-size: 15px;
     margin-top: -2px;
