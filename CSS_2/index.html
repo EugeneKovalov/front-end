@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS_2</title>
+</head>
+<body>
+<input type="checkbox" /><span>Я не отмечен</span>
+<style type="text/css">
+    body {
+        font-family: Verdana;
+        font-size: 16px;
+    }
+    input[type=checkbox] {
+        position: absolute;
+        margin-left: 130px;
+    }
+
+    input[type=checkbox]:checked:before {
+        width: 100px;
+        font-size: 18px;
+        content: "Я отмечен";
+        position: absolute;
+        right: 35px;
+        top: -5px;
+    }
+
+    input:checked + span {
+        visibility: hidden;
+    }
+</style>
+
+<!--Второе задание-->
+
+<div class="task-2">
+    <div>4</div>
+    <div>1</div>
+    <div>3</div>
+    <div>2</div>
+    <div>6</div>
+    <div>5</div>
+</div>
+<style type="text/css">
+    .task-2 {
+        width: 250px;
+    }
+    .task-2 div {
+        float: left;
+
+        line-height: 50px;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        background: #DFD;
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    .task-2 div:nth-child(1) {
+        float: right;
+        margin-right: 50px;
+    }
+    .task-2 div:nth-child(2) {
+    }
+    .task-2 div:nth-child(3) {
+        float: right;
+    }
+    .task-2 div:nth-child(4) {
+
+    }
+    .task-2 div:nth-child(5) {
+        clear: both;
+        float: right;
+        margin-right: 150px;
+    }
+    .task-2 div:nth-child(6) {
+    }
+</style>
+
+<br />
+<hr />
+
+<!--Третье задание-->
+<div class="task-3">
+    <div>4</div>
+    <div>1</div>
+    <div>3</div>
+    <div>2</div>
+    <div>6</div>
+    <div>5</div>
+</div>
+<style type="text/css">
+    .task-3 {
+        width: 250px;
+    }
+    .task-3 div {
+        position: relative;
+        line-height: 50px;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        background: #DFD;
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    .task-3 div:nth-child(1) {
+        margin-left: 150px;
+    }
+    .task-3 div:nth-child(2) {
+        margin-top: -50px;
+    }
+    .task-3 div:nth-child(3) {
+        margin-left: 100px;
+        margin-top: -50px;
+    }
+    .task-3 div:nth-child(4) {
+        margin-left: 50px;
+        margin-top: -50px;
+    }
+    .task-3 div:nth-child(5) {
+        margin-left: 50px;
+    }
+    .task-3 div:nth-child(6) {
+        margin-top: -50px;
+    }
+</style>
+
+<br />
+<hr />
+
+<!--Четвертое задание-->
+
+<div class="task-4">
+    <div>4</div>
+    <div>1</div>
+    <div>3</div>
+    <div>2</div>
+    <div>6</div>
+    <div>5</div>
+</div>
+<style type="text/css">
+    .task-4 {
+        width: 250px;
+    }
+    .task-4 div {
+        position: absolute;
+        line-height: 50px;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        background: #DFD;
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    .task-4 div:nth-child(1) {
+        left: 158px;
+    }
+    .task-4 div:nth-child(2) {
+    }
+    .task-4 div:nth-child(3) {
+        left: 108px;
+    }
+    .task-4 div:nth-child(4) {
+        left: 58px;
+    }
+    .task-4 div:nth-child(5) {
+        top: 324px;
+        left: 58px;
+    }
+    .task-4 div:nth-child(6) {
+        top: 324px;
+    }
+</style>
+
+<!--Пятое задание-->
+
+<div class="hover-div">
+    <div class="inner-div"></div>
+</div>
+<style type="text/css">
+    .hover-div {
+        margin-top: 150px;
+        position: relative;
+
+        width: 300px;
+        height: 200px;
+        background: linear-gradient(135deg, #000 0%, #F00 100%);
+    }
+
+    .hover-div .inner-div {
+        position: absolute;
+        left: 0; top: 0; right: 0; bottom: 0;
+        background: #F00;
+        opacity: 0;
+        -webkit-transition: opacity 1s linear;
+    }
+
+    .hover-div:hover .inner-div {
+        opacity: 1;
+    }
+</style>
+
+
+
+</body>
+</html>
