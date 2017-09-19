@@ -54,21 +54,19 @@ blockquote p::after {
     content: "»";
 }
 
-.p-first {
+.p-main {
     letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.p-first {
     line-height: 30px;
 }
 
 .p-second {
     letter-spacing: 1px;
-    word-spacing: 5px;
     text-align: justify;
     background-color: #8CFD8E;
-}
-
-.p-third {
-    letter-spacing: 2px;
-    word-spacing: 5px;
 }
 
 .p-fourth {
