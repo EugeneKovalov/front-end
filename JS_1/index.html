@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_1</title>
+</head>
+<body>
+<script>
+    // 1
+    var day = 3;
+    var hour = 13;
+    var minute = 40;
+    var state = shopState(day, hour, minute);
+
+    function shopState(day, hour, minute) {
+        if (day === 6 || hour < 8 || hour >= 19) {
+            return "закрыт";
+        } else if (hour === 13 && minute >= 30 ||
+            hour === 14 && minute <= 30) {
+            return "на перерыве";
+        } else {
+            return "открыт";
+        }
+    }
+
+    console.log('В ' + hour + ':' + minute + ' ' + (day +1) + 'го дня недели статус магазина: ' + state);
+
+    // 2
+    var sum = 0;
+    var c = 1;
+    while (c <= 20) {
+        sum += (c % 3 === 0) ? c : 0;
+        c++;
+    }
+
+    console.log(sum);
+
+    // 3
+    var sum2 = 0;
+
+    for (var i = 1; i <= 30; i++) {
+        if (i % 3 === 0 && i % 2 !== 0) {
+            sum2 += i;
+        } else {
+            continue;
+        }
+    }
+
+    console.log(sum2);
+
+    // 4
+    var n = 1;
+    do {
+        if (n % 4 === 0) {
+            console.log(n);
+        }
+        n++;
+        if (n === 30) {
+            break;
+        }
+    } while (true);
+
+    // 5
+    var a = 10;
+    var b = 5;
+
+    var mediate = new Function('a', 'b', 'console.log(a + b / arguments.length)');
+
+    mediate(a, b);
+
+    // 6
+    var k = 10.5;
+    var result = 0;
+
+    function sumRecursive(k) {
+        if (k > 0) {
+            result += k;
+            k--;
+            sumRecursive(k);
+        }
+        return result;
+    }
+
+    console.log('Сумма чисел от 1 до ' + k + ' равна: ' + sumRecursive(k));
+
+    // 7
+    var startHour = 6, endHour = 24;
+    var countEnergyCost = function () {
+        var result = 0;
+        var power = 2.5;
+        var price = 1.68;
+
+        for (var i = startHour; i <= endHour; i++) {
+            if (i >= 23 && i <= 24 || i >= 0 && i <= 7) {
+                result += power * (price / 2);
+            } else {
+                result += power * price;
+            }
+        }
+
+        return result;
+    };
+
+    console.log('В период с ' + startHour + ' до ' + endHour + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCost(startHour, endHour) + ' грн. ');
+
+    </script>
+</body>
+</html>
