@@ -64,39 +64,44 @@
     var a = 10;
     var b = 5;
 
-    var mediate = new Function('a', 'b', 'console.log(a + b / arguments.length)');
+    var mediate = new Function('a', 'b', 'console.log((a + b) / 2)');
 
     mediate(a, b);
 
     // 6
     var k = 10.5;
-    var result = 0;
 
     function sumRecursive(k) {
-        if (k > 0) {
-            result += k;
-            k--;
-            sumRecursive(k);
+        if (k <= 0) {
+            return 0;
+        } else {
+            return k + sumRecursive(k - 1);
         }
-        return result;
     }
 
     console.log('Сумма чисел от 1 до ' + k + ' равна: ' + sumRecursive(k));
 
     // 7
-    var startHour = 6, endHour = 24;
-    var countEnergyCost = function () {
+    var startHour = 21, endHour = 0;
+    var countEnergyCost = function (startHour, endHour) {
         var result = 0;
         var power = 2.5;
         var price = 1.68;
 
-        for (var i = startHour; i <= endHour; i++) {
-            if (i >= 23 && i <= 24 || i >= 0 && i <= 7) {
+        var i = startHour;
+
+        do {
+            if (i >= 23 && i < 24 || i >= 0 && i < 7) {
                 result += power * (price / 2);
             } else {
                 result += power * price;
             }
-        }
+            i++;
+
+            if (i === 24) {
+                i = 0;
+            }
+        } while (i !== endHour);
 
         return result;
     };
