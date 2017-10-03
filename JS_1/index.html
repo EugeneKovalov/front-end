@@ -82,15 +82,12 @@
     console.log('Сумма чисел от 1 до ' + k + ' равна: ' + sumRecursive(k));
 
     // 7
-    var startHour = 21, endHour = 0;
     var countEnergyCost = function (startHour, endHour) {
         var result = 0;
         var power = 2.5;
         var price = 1.68;
 
-        var i = startHour;
-
-        do {
+        for (i = startHour; i <= endHour; i++) {
             if (i >= 23 && i < 24 || i >= 0 && i < 7) {
                 result += power * (price / 2);
             } else {
@@ -101,15 +98,22 @@
             if (i === 24) {
                 i = 0;
             }
-        } while (i !== endHour);
+        }
 
         return result;
     };
 
-    console.log('В период с ' + startHour + ' до ' + endHour + ' часов ' +
+    console.log('В период с ' + 23 + ' до ' + 24 + ' часов ' +
         'потреблено энергии на  ' +
-        countEnergyCost(startHour, endHour) + ' грн. ');
+        countEnergyCost(23, 24) + ' грн. ');
 
+    console.log('В период с ' + 23 + ' до ' + 9 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCost(23, 9) + ' грн. ');
+
+    console.log('В период с ' + 5 + ' до ' + 10 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCost(5, 10) + ' грн. ');
     </script>
 </body>
 </html>
