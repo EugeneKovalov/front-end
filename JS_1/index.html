@@ -83,9 +83,10 @@
 
     // 7
     var countEnergyCost = function (startHour, endHour) {
-        if (startHour === endHour) {
-            return "Введите интервал времени.";
+        if (startHour >= endHour) {
+            return 0;
         }
+
         var result = 0;
         var power = 2.5;
         var price = 1.68;
@@ -119,6 +120,62 @@
     console.log('В период с ' + 11 + ' до ' + 14 + ' часов ' +
         'потреблено энергии на  ' +
         countEnergyCost(11, 14) + ' грн. ');
-    </script>
+    console.log('В период с ' + 6 + ' до ' + 24 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCost(6, 24) + ' грн. ');
+
+    console.log("--------------------------------");
+    // 7.1
+    var countEnergyCostSecond = function (startHour, endHour) {
+        if (startHour >= endHour) {
+            return 0;
+        }
+
+        var price = 2.5 * 1.68;
+
+        if (startHour === 23 && startHour <= 24)
+        {
+            return price / 2;
+        }
+        else if (startHour >= 0 && startHour < 7 && endHour >= 23)
+        {
+            return ((price / 2) * (startHour - 7)) + ((price * (endHour - startHour - 1))) + (price / 2);
+        }
+        else if (startHour >= 0 && startHour < 7)
+        {
+            return (price / 2) * (startHour - 7) + (price * (endHour - startHour));
+        }
+        else if (startHour >= 7 && endHour >= 23)
+        {
+            return price * (endHour - startHour - 1) + (price / 2);
+        }
+        else if (startHour >= 7)
+        {
+            return price * (endHour - startHour);
+        }
+    };
+
+    console.log('В период с ' + 12 + ' до ' + 13 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCostSecond(12, 13) + ' грн. ');
+    console.log('В период с ' + 13 + ' до ' + 13 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCostSecond(13, 13) + ' грн. ');
+    console.log('В период с ' + 6 + ' до ' + 8 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCostSecond(6, 8) + ' грн. ');
+    console.log('В период с ' + 21 + ' до ' + 24 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCostSecond(21, 24) + ' грн. ');
+    console.log('В период с ' + 22 + ' до ' + 22 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCostSecond(22, 22) + ' грн. ');
+    console.log('В период с ' + 11 + ' до ' + 14 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCostSecond(11, 14) + ' грн. ');
+    console.log('В период с ' + 6 + ' до ' + 24 + ' часов ' +
+        'потреблено энергии на  ' +
+        countEnergyCostSecond(6, 24) + ' грн. ');
+</script>
 </body>
 </html>
