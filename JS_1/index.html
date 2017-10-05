@@ -146,6 +146,12 @@
             else {
                 return ((7 - startHour) * halfPrice) + (endHour - 7) * price;
             }
+        } else if (endHour === 24) {
+            if (startHour === 23) {
+                return halfPrice;
+            } else {
+                return ((endHour - startHour - 1) * price) + halfPrice;
+            }
         } else {
             return (endHour - startHour) * price;
         }
