@@ -132,26 +132,22 @@
         }
 
         var price = 2.5 * 1.68;
+        var halfPrice = (2.5 * 1.68) / 2;
 
-        if (startHour === 23 && startHour <= 24)
-        {
-            return price / 2;
-        }
-        else if (startHour >= 0 && startHour < 7 && endHour >= 23)
-        {
-            return ((price / 2) * (startHour - 7)) + ((price * (endHour - startHour - 1))) + (price / 2);
-        }
-        else if (startHour >= 0 && startHour < 7)
-        {
-            return (price / 2) * (startHour - 7) + (price * (endHour - startHour));
-        }
-        else if (startHour >= 7 && endHour >= 23)
-        {
-            return price * (endHour - startHour - 1) + (price / 2);
-        }
-        else if (startHour >= 7)
-        {
-            return price * (endHour - startHour);
+        if (startHour < 7) {
+            if (endHour <= 7) {
+                return (endHour - startHour) * halfPrice;
+            }
+
+            else if (endHour === 24) {
+                return ((7 - startHour) * halfPrice) + ((endHour - 8) * price) + halfPrice;
+            }
+
+            else {
+                return ((7 - startHour) * halfPrice) + (endHour - 7) * price;
+            }
+        } else {
+            return (endHour - startHour) * price;
         }
     };
 
