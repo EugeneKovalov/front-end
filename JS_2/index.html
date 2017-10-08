@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_2</title>
+</head>
+<body>
+<script>
+    // Reverse
+    var unreversed = [1, 2, 4, 8, 16, 32];
+
+    function reverse(elements) {
+        elements.forEach(function callback(currentValue, index, array) {
+            if (index < array.length / 2) {
+                var tmp = array[array.length - 1 - index];
+                array[array.length - 1 - index] = currentValue;
+                array[index] = tmp;
+            }
+        });
+
+        return elements;
+    }
+
+    console.log(reverse(unreversed));
+
+    // Sort
+    //    Дан массив зарплат (целые числа), полученный из базы данных. Необходимо исправить функцию sortSalaries, сортирующую список по возрастанию. Из-за программного сбоя нельзя использовать функцию-callback внутри sort и нельзя использовать собственную "ручную" сортировку. При переборе массива использовать for.
+
+    var salaries = [3100, 2, -4, 890, -12, 1120, -321, 3100, -12, 2312302, 23012, 740, 2100,
+        550, 540, 3200, -317902, 1570, 250];
+
+    function sortSalaries(salaryList) {
+        var salaryListCopy = salaryList.slice();
+
+        function getMaxDivider(array) {
+            // здесь я пытался реализовать работу с универсальными величинами числа
+            // в итоге функция корректно работает до семизначных чисел
+            // чтобы корректно учитывалась сортировка негативных чисел, я могу предложить собрать их в отдельный массив, не включая в основной, далее сделать реверс и сконкатенировать в начало к основному.
+
+            // Все это ради универсальности, так, если брать во внимание только представленные данные - можно взять число 1000 для деления и умножения и убрать всю эту функцию.
+
+            var str = '1';
+            var num = '';
+
+            var max = Math.max.apply(Math, array);
+            var min = Math.min.apply(Math, array);
+
+            min = min < 0 ? min * -1 : min;
+            num = min < max ? max : min;
+
+            num = num.toString();
+
+            for(var i = 1; i < num.length; i++) {
+                str += '0';
+            }
+
+            return parseInt(str);
+        }
+
+        var max = getMaxDivider(salaryList);
+
+        for (var i = 0; i < salaryListCopy.length; i++) {
+            salaryListCopy[i] = salaryListCopy[i] / max;
+        }
+
+        salaryListCopy.sort();
+
+        for (var i = 0; i < salaryListCopy.length; i++) {
+            salaryListCopy[i] = parseInt(Math.round(salaryListCopy[i] * max));
+        }
+
+        return salaryListCopy;
+    }
+    console.log(sortSalaries(salaries));
+
+    // Задача №4. Максимум из минимумов
+    // Дан массив зарплат из задачи №3. Нужно найти максимальную зарплату, меньшую 1000. Использовать reduce. Результ вывести в консоль.
+
+    var newSalaries = [3100, 890, 1120, 740, 2100,
+        550, 540, 3200, 1570, 250];
+
+    function maxOfThousand(newSalaries) {
+        return newSalaries.reduce(function(previousValue, currentValue) {
+            return previousValue < currentValue && currentValue < 1000 ? currentValue : previousValue;
+        }, 0);
+    }
+
+    console.log(maxOfThousand(newSalaries));
+
+    // Задача №5. Поиск квадратов
+    // Дан массив целых чисел. Нужно найти подмассив чисел, которые являются квадратами других целых чисел. Для работы со степенями можно использовать Math.pow(число, степень).
+    var mayBeSquares = [1, 2, 3, 4, 8, 9, 15, 16,
+        34, 36, 38, 24, 25, 26];
+
+    function extractSquares(nums) {
+        var resultArray = [];
+
+        // если i = 0 - то к нам попадет 1, хоть и она и является квадратом самого себя, но в условии указано "которые являются квадратами других целых чисел."
+        for (var i = 1; i < nums.length; i++) {
+            for (var j = 0; j < nums.length; j++) {
+                if (nums[i] === Math.pow(nums[j], 2)) {
+                    resultArray.push(nums[i]);
+                }
+            }
+        }
+
+        return resultArray;
+    }
+    console.log(extractSquares(mayBeSquares));
+
+    // Задача №6. Только уникальные
+    // Дан массив имен сотрудников. Найти подмассив уникальных имен.
+    var teamMates = ['Mike', 'Peter', 'Alex', 'Sonya',
+        'Mike', 'Mary', 'Like', 'Alex', 'Abraham', 'Mary'];
+
+    function unique(elements) {
+        var resultArray = [];
+
+        for (var i = 0; i < elements.length; i++) {
+            if (elements.indexOf(elements[i]) === elements.lastIndexOf(elements[i])) {
+                resultArray.push(elements[i]);
+            }
+        }
+        return resultArray;
+    }
+    console.log(unique(teamMates));
+
+    // Задача №7. Складской учет
+    // Есть данные учета прихода/отправки товаров на склад в виде массива.
+
+    // В нечетных индексах массива - коды поступивших товаров,
+    // в четных индексах - коды отправленных со склада товаров.
+
+    // Определить, сколько всего товаров пришло и было отправлено со склада, а также получить массив кодов имеющихся на складе товаров.
+
+    var transactions = [
+        [101, 102, 103], // поступление
+        [], // отправка
+        [104, 105, 106], // поступление и т.д.
+        [103], // отправка и т.д.
+        [107, 108],
+        [105, 106],
+        [109, 110, 111, 112],
+        [108, 110],
+        [103],
+        [111]
+    ];
+    function balance(actions) {
+        var itemsIn = 0;
+        var itemsOut = 0;
+        var itemsAvailable = [];
+
+        for (var i = 0; i < actions.length; i++) {
+            if (i % 2 === 0) {
+                for (var j = 0; j < actions[i].length; j++) {
+                    if (actions[i][j] !== undefined || actions[i][j] !== null) {
+                        itemsIn++;
+                        itemsAvailable.push(actions[i][j]);
+                    }
+                }
+            } else {
+                for (j = 0; j < actions[i].length; j++) {
+                    if (actions[i][j] !== undefined || actions[i][j] !== null) {
+                        itemsOut++;
+                        itemsAvailable.forEach(function (val, index, array) {
+                            if (actions[i][j] === val) {
+                                array.splice(index, 1);
+                            }
+                        });
+                    }
+                }
+            }
+        }
+
+        console.log('Пришло: ' + itemsIn + '\n' +
+            'Отправлено: ' + itemsOut + '\n' +
+            'Товары на складе: ' + itemsAvailable);
+    }
+
+    balance(transactions);
+
+</script>
+</body>
+</html>

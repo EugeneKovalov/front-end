@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+</head>
+<body>
+<script>
+    function calculate(firstVal, operator, secondVal) {
+        switch (operator) {
+            case '+':
+                return alert(firstVal + secondVal);
+                break;
+            case '-':
+                return alert(firstVal - secondVal);
+                break;
+            case '/':
+                if (secondVal === 0) {
+                    return alert('Impossible to divide by zero');
+                } else {
+                    return alert(firstVal / secondVal);
+                }
+                break;
+            case '*':
+                return alert(firstVal * secondVal);
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    function main() {
+        var a = parseInt(prompt('enter first value'));
+
+        if (isNaN(a)) {
+            return alert('enter right number');
+        }
+
+        var op = prompt('enter operation sign');
+
+        if (op === '*' || op === '/' || op === '+' || op === '-') {
+            var b = parseInt(prompt('enter second value'));
+
+            if (isNaN(b)) {
+                return alert('enter right number');
+            }
+
+            calculate(a, op, b);
+        }
+        else {
+            return alert('enter right operation sign');
+        }
+    }
+
+    main();
+</script>
+</body>
+</html>
