@@ -15,11 +15,7 @@
                 return alert(firstVal - secondVal);
                 break;
             case '/':
-                if (secondVal === 0) {
-                    return alert('Impossible to divide by zero');
-                } else {
-                    return alert(firstVal / secondVal);
-                }
+                return alert(firstVal / secondVal);
                 break;
             case '*':
                 return alert(firstVal * secondVal);
@@ -31,29 +27,41 @@
     }
 
     function main() {
-        var a = parseInt(prompt('enter first value'));
+        while (true) {
+            var a = parseFloat(prompt('enter first value'));
 
-        if (isNaN(a)) {
-            return alert('enter right number');
+            if (isNaN(a)) {
+                alert('enter right number');
+            } else {
+                break;
+            }
         }
 
-        var op = prompt('enter operation sign');
+        while (true) {
+            var op = prompt('enter operation sign');
 
-        if (op === '*' || op === '/' || op === '+' || op === '-') {
-            var b = parseInt(prompt('enter second value'));
+            if (op === '*' || op === '/' || op === '+' || op === '-') {
+                break;
+            } else {
+                alert('enter right operation sign');
+            }
+        }
+
+        while (true) {
+            var b = parseFloat(prompt('enter second value'));
 
             if (isNaN(b)) {
-                return alert('enter right number');
+                alert('enter right number');
+            } else {
+                break;
             }
+        }
 
-            calculate(a, op, b);
-        }
-        else {
-            return alert('enter right operation sign');
-        }
+        calculate(a, op, b);
     }
 
     main();
+
 </script>
 </body>
 </html>
