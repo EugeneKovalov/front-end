@@ -101,14 +101,9 @@
         'Mike', 'Mary', 'Like', 'Alex', 'Abraham', 'Mary'];
 
     function unique(elements) {
-        var resultArray = [];
-
-        for (var i = 0; i < elements.length; i++) {
-            if (elements.indexOf(elements[i]) === elements.lastIndexOf(elements[i])) {
-                resultArray.push(elements[i]);
-            }
-        }
-        return resultArray;
+        return elements.filter(function(element, i) {
+            return elements.indexOf(element) === i;
+        });
     }
     console.log(unique(teamMates));
 
