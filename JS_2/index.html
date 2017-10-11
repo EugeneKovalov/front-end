@@ -82,10 +82,9 @@
     function extractSquares(nums) {
         var resultArray = [];
 
-        // если i = 0 - то к нам попадет 1, хоть и она и является квадратом самого себя, но в условии указано "которые являются квадратами других целых чисел."
         for (var i = 0; i < nums.length; i++) {
-            for (var j = 0; j < nums.length; j++) {
-                if (nums[i] === Math.pow(nums[j], 2)) {
+            for (var j = 0; j <= nums[i]; j++) {
+                if (nums[i] === Math.pow(j, 2)) {
                     resultArray.push(nums[i]);
                 }
             }
