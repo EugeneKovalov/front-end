@@ -140,9 +140,9 @@
                 }
             }
 
-            if (arr[i].charAt(arr[i].length-1) === '!' || arr[i].charAt(arr[i].length-1) === '.'
-                || arr[i].charAt(arr[i].length-1) === ',' || arr[i].charAt(arr[i].length-1) === '?') {
+            let tmp = arr[i].charAt(arr[i].length-1);
 
+            if (tmp === '!' || tmp === '.' || tmp === ',' || tmp === '?') {
                 arr[i] = arr[i].substring(0, arr[i].length - 1) +
                     emojiArr[getRandomArbitrary(0, emojiArr.length)] +
                     arr[i].substring(arr[i].length - 1, arr[i].length);
