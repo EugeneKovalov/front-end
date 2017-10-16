@@ -9,14 +9,14 @@
     'use strict';
     // 1
     function mergeObjects(obj1, obj2) {
-        var obj = Object.assign({}, obj1);
+        let obj = Object.assign({}, obj1);
 
-        for (var prop in obj2) {
+        for (let prop in obj2) {
             if (!obj.hasOwnProperty(prop)) {
                 obj[prop] = obj2[prop];
             }
 
-            for (var prop2 in obj) {
+            for (let prop2 in obj) {
                 if (prop === prop2) {
                     obj[prop2] = obj2[prop];
                     break;
@@ -40,7 +40,7 @@
     );
 
     // 2
-    var sportsmen = [
+    let sportsmen = [
         {name: "Yan", age: 33},
         {name: "Ben", age: 45},
         {name: "Sam", age: 60},
@@ -49,7 +49,7 @@
     ];
 
     function topOldest(menlist, limit) {
-        var winners = [];
+        let winners = [];
 
         menlist.sort(function (a,b) {
             if (a.age > b.age)
@@ -59,7 +59,7 @@
             return 0;
         });
 
-        for (var i = 0; i < limit; i++) {
+        for (let i = 0; i < limit; i++) {
             winners.push(menlist[i].name);
         }
 
@@ -69,7 +69,7 @@
     console.log(topOldest(sportsmen, 3));
 
     // 3
-    var runner3 = { };
+    let runner3 = { };
 
     function giveMedals(winner, medal, howMany) {
         if (!winner.hasOwnProperty('medals')) {
@@ -98,45 +98,43 @@
     console.log(runner3);
 
     // 4
-    var spammer = {
-        spamText: [],
+    let spammer = {
+        spamArray: [],
         timer: function () {},
 
         startSpam: function (message) {
-            this.spamText.push(message);
+            this.spamArray.push(message);
             clearTimeout(this.timer);
 
             this.timer = setInterval(function () {
-                spammer.spamText.forEach(function(item) {
+                spammer.spamArray.forEach(function(item) {
                     console.log(item);
                 });
             }, 1000);
         },
 
         stopSpam: function (message) {
-            this.spamText.splice(this.spamText.indexOf(message), 1);
+            this.spamArray.splice(this.spamArray.indexOf(message), 1);
         },
     };
 
     spammer.startSpam("ddw");
     spammer.startSpam("1");
     spammer.stopSpam("1");
-    spammer.startSpam("2");
-    spammer.stopSpam("2");
     spammer.stopSpam("ddw");
     spammer.startSpam("d");
 
     // 5
     function beautify(str) {
-        var arr = str.split(' ');
-        var emojiArr = [':)', ';)', '(:', ':p', ':D', ':-*'];
+        let arr = str.split(' ');
+        let emojiArr = [':)', ';)', '(:', ':p', ':D', ':-*'];
 
         function getRandomArbitrary(min, max) {
             return Math.floor(Math.random() * (max - min) + min);
         }
 
-        for (var i = 0; i < arr.length; i++) {
-            for (var j = 0; j < arr[i].length; j++) {
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
                 if (j === getRandomArbitrary(0, arr[i].length)) {
                     arr[i] = arr[i].substring(0, j) + arr[i][j].toUpperCase() + arr[i].substring(j + 1, arr[i].length);
                 }
