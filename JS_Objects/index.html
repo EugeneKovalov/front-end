@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+</head>
+<body>
+<script>
+    'use strict';
+    // 1
+    function mergeObjects(obj1, obj2) {
+        var obj = Object.assign({}, obj1);
+
+        for (var prop in obj2) {
+            if (!obj.hasOwnProperty(prop)) {
+                obj[prop] = obj2[prop];
+            }
+
+            for (var prop2 in obj) {
+                if (prop === prop2) {
+                    obj[prop2] = obj2[prop];
+                    break;
+                }
+            }
+        }
+        return obj;
+    }
+
+    console.log(mergeObjects({
+            weight: 75,
+            petName: 'Goofie',
+            hasJob: true,
+            isMarried: false
+        },
+        {
+            weight: 90,
+            isHomeless: false,
+            petName: 'Stoney'
+        })
+    );
+
+    // 2
+    var sportsmen = [
+        {name: "Yan", age: 33},
+        {name: "Ben", age: 45},
+        {name: "Sam", age: 60},
+        {name: "Jeremy", age: 89},
+        {name: "Katy", age: 12}
+    ];
+
+    function topOldest(menlist, limit) {
+        var winners = [];
+
+        menlist.sort(function (a,b) {
+            if (a.age > b.age)
+                return -1;
+            if (a.age < b.age)
+                return 1;
+            return 0;
+        });
+
+        for (var i = 0; i < limit; i++) {
+            winners.push(menlist[i].name);
+        }
+
+        return winners;
+    }
+
+    console.log(topOldest(sportsmen, 3));
+
+    // 3
+    var runner3 = { };
+
+    function giveMedals(winner, medal, howMany) {
+        if (!winner.hasOwnProperty('medals')) {
+            winner['medals'] = {};
+        }
+
+        if (winner['medals'][medal] === undefined) {
+            winner['medals'][medal] = howMany;
+        } else {
+            winner['medals'][medal] += howMany;
+        }
+    }
+
+    console.log(runner3);
+
+    giveMedals(runner3, 'silver', 2);
+    console.log(runner3);
+
+    giveMedals(runner3, 'bronze', 3);
+    console.log(runner3);
+
+    giveMedals(runner3, 'silver', 3);
+    console.log(runner3);
+
+    giveMedals(runner3, 'gold', 1);
+    console.log(runner3);
+
+    // 4
+    var spammer = {
+        spamText: [],
+        timer: function () {},
+
+        startSpam: function (message) {
+            this.spamText.push(message);
+            clearTimeout(this.timer);
+
+            this.timer = setInterval(function () {
+                spammer.spamText.forEach(function(item) {
+                    console.log(item);
+                });
+            }, 1000);
+        },
+
+        stopSpam: function (message) {
+            this.spamText.splice(this.spamText.indexOf(message), 1);
+        },
+    };
+
+    spammer.startSpam("ddw");
+    spammer.startSpam("1");
+    spammer.stopSpam("1");
+    spammer.startSpam("2");
+    spammer.stopSpam("2");
+    spammer.stopSpam("ddw");
+    spammer.startSpam("d");
+
+    // 5
+    function beautify(str) {
+        var arr = str.split(' ');
+        var emojiArr = [':)', ';)', '(:', ':p', ':D', ':-*'];
+
+        function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+        }
+
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr[i].length; j++) {
+                if (j === getRandomArbitrary(0, arr[i].length)) {
+                    arr[i] = arr[i].substring(0, j) + arr[i][j].toUpperCase() + arr[i].substring(j + 1, arr[i].length);
+                }
+            }
+
+            if (arr[i].charAt(arr[i].length-1) === '!' || arr[i].charAt(arr[i].length-1) === '.'
+                || arr[i].charAt(arr[i].length-1) === ',' || arr[i].charAt(arr[i].length-1) === '?') {
+
+                arr[i] = arr[i].substring(0, arr[i].length - 1) +
+                    emojiArr[getRandomArbitrary(0, emojiArr.length)] +
+                    arr[i].substring(arr[i].length - 1, arr[i].length);
+            } else {
+                arr[i] += emojiArr[getRandomArbitrary(0, emojiArr.length)]
+            }
+        }
+
+        return arr.join(' ');
+    }
+
+    console.log(beautify("Всем привет, как дела?"));
+
+    // 6
+
+
+</script>
+</body>
+</html>
