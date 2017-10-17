@@ -9,10 +9,13 @@
     'use strict';
     // 1
     function mergeObjects(obj1, obj2) {
-        let obj = Object.assign({}, obj1);
+        let obj = {};
+        for (let prop in obj1) {
+            obj[prop] = obj1[prop];
+        }
 
         for (let prop in obj2) {
-            if (!obj.hasOwnProperty(prop)) {
+            if (!obj[prop]) {
                 obj[prop] = obj2[prop];
             }
 
@@ -72,14 +75,14 @@
     let runner3 = { };
 
     function giveMedals(winner, medal, howMany) {
-        if (!winner.hasOwnProperty('medals')) {
-            winner['medals'] = {};
+        if (!winner.medals) {
+            winner.medals = {};
         }
 
-        if (winner['medals'][medal] === undefined) {
-            winner['medals'][medal] = howMany;
+        if (!winner.medals[medal]) {
+            winner.medals[medal] = howMany;
         } else {
-            winner['medals'][medal] += howMany;
+            winner.medals[medal] += howMany;
         }
     }
 
@@ -118,11 +121,11 @@
         },
     };
 
-    spammer.startSpam("ddw");
-    spammer.startSpam("1");
-    spammer.stopSpam("1");
-    spammer.stopSpam("ddw");
-    spammer.startSpam("d");
+    //    spammer.startSpam("ddw");
+    //    spammer.startSpam("1");
+    //    spammer.stopSpam("1");
+    //    spammer.stopSpam("ddw");
+    //    spammer.startSpam("d");
 
     // 5
     function beautify(str) {
@@ -157,8 +160,24 @@
     console.log(beautify("Всем привет, как дела?"));
 
     // 6
+    let password = "YTFiMmMz";
 
+    function bruteForce(psswrd) {
+        let variant = 0;
 
+        while (true) {
+            variant++;
+            let encodedVariant = btoa(variant.toString(13));
+
+            if (psswrd === encodedVariant) {
+                return console.log(encodedVariant + " is identical to given pass: " + psswrd);
+            } else if (variant.length > 6) {
+                return console.log("failed");
+            }
+        }
+    }
+
+    console.log(bruteForce(password));
 </script>
 </body>
 </html>

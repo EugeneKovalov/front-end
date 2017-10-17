@@ -36,10 +36,14 @@ function mergeObjects(obj1, obj2) {
     //     }
     // }
 
-    var obj = Object.assign({}, obj1);
+
+    let obj = {};
+    for (let prop in obj1) {
+        obj[prop] = obj1[prop];
+    }
 
     for (var prop in obj2) {
-        if (!obj.hasOwnProperty(prop)) {
+        if (!obj[prop]) {
             obj[prop] = obj2[prop];
         }
 
@@ -54,7 +58,7 @@ function mergeObjects(obj1, obj2) {
     return obj;
 }
 
-// console.log(mergeObjects(shawn, mike));
+console.log(mergeObjects(shawn, mike));
 
 // 2
 var sportsmen = [
@@ -106,30 +110,30 @@ var runner2 = {
 var runner3 = { };
 
 function giveMedals(winner, medal, howMany) {
-    if (!winner.hasOwnProperty('medals')) {
-        winner['medals'] = {};
+    if (!winner.medals) {
+        winner.medals = {};
     }
 
-    if (winner['medals'][medal] === undefined) {
-        winner['medals'][medal] = howMany;
+    if (!winner.medals[medal]) {
+        winner.medals[medal] = howMany;
     } else {
-        winner['medals'][medal] += howMany;
+        winner.medals[medal] += howMany;
     }
 }
 
-// console.log(runner3);
-//
-// giveMedals(runner3, 'silver', 2);
-// console.log(runner3);
-//
-// giveMedals(runner3, 'bronze', 3);
-// console.log(runner3);
-//
-// giveMedals(runner3, 'silver', 3);
-// console.log(runner3);
-//
-// giveMedals(runner3, 'gold', 1);
-// console.log(runner3);
+console.log(runner3);
+
+giveMedals(runner3, 'silver', 2);
+console.log(runner3);
+
+giveMedals(runner3, 'bronze', 3);
+console.log(runner3);
+
+giveMedals(runner3, 'silver', 3);
+console.log(runner3);
+
+giveMedals(runner3, 'gold', 1);
+console.log(runner3);
 
 // Создать объект spammer с двумя методами startSpam и stopSpam. При передаче методу startSpam некой строки он каждую секунду выводит в консоль (console.log) эту строку. При повторном запуске с другой строкой первая строка продолжает выводиться, а новая строка выводится отдельным console.log. Запуск метода stopSpam с параметром в виде строки находит эту строку среди выводимых в консоль и останавливает "спам" этой строки. Примерный результирующий вывод в консоль с расшифровкой по времени приведен ниже:
 // >spammer.startSpam('first');
@@ -164,13 +168,13 @@ var spammer = {
     },
 };
 
-spammer.startSpam("ddw");
-spammer.startSpam("1");
-spammer.stopSpam("1");
-spammer.startSpam("2");
-spammer.stopSpam("2");
-spammer.stopSpam("ddw");
-spammer.startSpam("d");
+// spammer.startSpam("ddw");
+// spammer.startSpam("1");
+// spammer.stopSpam("1");
+// spammer.startSpam("2");
+// spammer.stopSpam("2");
+// spammer.stopSpam("ddw");
+// spammer.startSpam("d");
 
 
 // Написать функцию, которая на вход будет принимать тектовую строку и будет возвращать "улучшенный" текст: буквы должны комбинировать регистр в произвольном порядке, а после каждого слова должен быть один из смайлов: :) ;) (: :p :D :-*. Строка на входе содержит только буквы русского алфавита и некоторые знаки препинания (. , ? ! ;). Примерный результирующий вывод в консоль приведен ниже:
@@ -209,12 +213,7 @@ function beautify(str) {
 
 console.log(beautify("Всем привет, как дела?"));
 
-// Имеется зашифрованный пароль (например, "YTFiMmMz") и извесна функция шифрования btoa. Извесно, что пароль имеет длину от 1 до 6 символов и состоит из цифр и букв a, b, c, не начинается с нуля. Написать функцию, которая с помощью последовательного перебора найдет пароль. Функцию btoa считаем "необратимой", т.е. использовать atob нельзя.
-// var password = "YTFiMmMz";
-//
-// function bruteForce(psswrd) {
-//     // ...
-//     var encodedVariant = btoa(variant);
-//     // ...
-// }
-// console.log(bruteForce(  password));
+let symbolsArr = [
+    'a', 'b', 'c',
+    '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+
