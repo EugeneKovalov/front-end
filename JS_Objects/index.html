@@ -160,7 +160,7 @@
     console.log(beautify("Всем привет, как дела?"));
 
     // 6
-    let password = "YTFiMmMz";
+    let password = "YmFiYQ==";
 
     function bruteForce(psswrd) {
         let variant = 0;
@@ -170,7 +170,7 @@
             let encodedVariant = btoa(variant.toString(13));
 
             if (psswrd === encodedVariant) {
-                return console.log(encodedVariant + " is identical to given pass: " + psswrd);
+                return variant.toString(13);
             } else if (variant.length > 6) {
                 return console.log("failed");
             }
