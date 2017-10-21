@@ -12,47 +12,13 @@ var shawn = {
 };
 
 function mergeObjects(obj1, obj2) {
-    // var obj = {};
-    // var lowestObj = {};
-    //
-    // if (Object.keys(obj1).length >= Object.keys(obj2).length) {
-    //     obj = obj1;
-    //     lowestObj = obj2;
-    // } else {
-    //     obj = obj2;
-    //     lowestObj = obj1;
-    // }
-    //
-    // for (var prop in lowestObj) {
-    //     if (!obj.hasOwnProperty(prop)) {
-    //         obj[prop] = lowestObj[prop];
-    //     }
-    //
-    //     for (var prop2 in obj) {
-    //         if (prop === prop2) {
-    //             obj[prop2] = lowestObj[prop];
-    //             break;
-    //         }
-    //     }
-    // }
-
-
     let obj = {};
     for (let prop in obj1) {
         obj[prop] = obj1[prop];
     }
 
-    for (var prop in obj2) {
-        if (!obj[prop]) {
-            obj[prop] = obj2[prop];
-        }
-
-        for (var prop2 in obj) {
-            if (prop === prop2) {
-                obj[prop2] = obj2[prop];
-                break;
-            }
-        }
+    for (let prop in obj2) {
+        obj[prop] = obj2[prop];
     }
 
     return obj;
@@ -148,26 +114,26 @@ console.log(runner3);
 // second // 00:00:05
 // second // 00:00:06
 
-var spammer = {
-    spamText: [],
-    timer: function () {},
-
-    startSpam: function (message) {
-        this.spamText.push(message);
-        clearTimeout(this.timer);
-
-        this.timer = setInterval(function () {
-            spammer.spamText.forEach(function(item) {
-                console.log(item);
-            });
-        }, 1000);
-    },
-
-    stopSpam: function (message) {
-        this.spamText.splice(this.spamText.indexOf(message), 1);
-    },
-};
-
+// var spammer = {
+//     spamText: [],
+//     timer: function () {},
+//
+//     startSpam: function (message) {
+//         this.spamText.push(message);
+//         clearTimeout(this.timer);
+//
+//         this.timer = setInterval(function () {
+//             spammer.spamText.forEach(function(item) {
+//                 console.log(item);
+//             });
+//         }, 1000);
+//     },
+//
+//     stopSpam: function (message) {
+//         this.spamText.splice(this.spamText.indexOf(message), 1);
+//     },
+// };
+//
 // spammer.startSpam("ddw");
 // spammer.startSpam("1");
 // spammer.stopSpam("1");
@@ -212,8 +178,3 @@ function beautify(str) {
 }
 
 console.log(beautify("Всем привет, как дела?"));
-
-let symbolsArr = [
-    'a', 'b', 'c',
-    '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-

@@ -15,17 +15,9 @@
         }
 
         for (let prop in obj2) {
-            if (!obj[prop]) {
-                obj[prop] = obj2[prop];
-            }
-
-            for (let prop2 in obj) {
-                if (prop === prop2) {
-                    obj[prop2] = obj2[prop];
-                    break;
-                }
-            }
+            obj[prop] = obj2[prop];
         }
+
         return obj;
     }
 
