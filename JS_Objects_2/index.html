@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    // 1 Почему при вызове с другим параметром значение имени пользователя не изменилось? Как исправить код?
 
+    // 1 Почему при вызове с другим параметром значение имени пользователя не изменилось? Как исправить код?
     let user = {};
     let newFirstName = "boris";
-    let newFirstName2 = "basil";
+    let newFirstName2 = "Vitaliy";
     function setNewName(givenName) {
-        let capitalizedName = newFirstName[0].toUpperCase() +
+        let capitalizedName = givenName[0].toUpperCase() +
             givenName.substr(1);
         let prettyfiedName = "-=" + capitalizedName + "=-";
         this.name = prettyfiedName;
