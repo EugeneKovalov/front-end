@@ -142,12 +142,11 @@ var decorator = function(f) {
                         arguments[i] = elem.length;
                         break;
                     case 'object':
+                        arguments[i] = 0;
                         for (var prop in elem) {
                             if (typeof elem[prop] == 'number') {
                                 arguments[i] = elem[prop];
                                 break;
-                            } else {
-                                arguments[i] = 0;
                             }
                         }
                         break;
@@ -167,7 +166,7 @@ Math.max = decorator(Math.max);
 console.log(Math.max(
     1,
     2,
-    'abc', { a: 4, b: 3 }
+    'abc', { a: 'de', b: 7 }
 )); // 3
 
 console.log(Math.max(
