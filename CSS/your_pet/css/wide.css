@@ -1,0 +1,54 @@
+* {
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    background: #008900 url("../img/diagmonds-light.png");
+}
+
+
+header {
+padding: 10px 10px 5px;
+background-color: #33691E;
+border-bottom: solid 1px #fff;
+}
+
+.header-title {
+color: #fff;
+font-size: 1em;
+}
+
+.container {
+background-color: #F1F8E9;
+}
+
+.container-image {
+width: 470px;
+}
+
+.small-image {
+width: 32%;
+padding-right: 5px;
+}
+
+.fa {
+display: none;
+color: #fff;
+}
+
+.small-image {
+float: left;
+}
+
+@media (max-width: 480px) {
+
+.header-title {
+display: inline-block;
+}
+.fa {
+display: inline-block;
+float: right;
+}
+}

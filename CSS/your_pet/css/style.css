@@ -1,0 +1,46 @@
+@import url("wide.css") screen and (min-width: 800px);
+@import url("narrow.css") screen and (min-width: 480px) and (max-width: 800px);
+
+/*(Light Green): #33691E; #689F38; #AED581; #F1F8E9;*/
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 10px 10px 5px;
+        background-color: #33691E;
+        border-bottom: solid 1px #fff;
+    }
+
+    .header-title {
+        color: #fff;
+        font-size: 1em;
+    }
+
+    .container {
+        background-color: #F1F8E9;
+    }
+
+    .container-image {
+        width: 470px;
+    }
+
+    .small-image {
+        width: 32%;
+        padding-right: 5px;
+    }
+
+    .fa {
+        display: none;
+        color: #fff;
+    }
+
+    .small-image {
+        float: left;
+    }
+    .header-title {
+        display: inline-block;
+    }
+    .fa {
+        display: inline-block;
+        float: right;
+    }
+}
