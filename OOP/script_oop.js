@@ -29,19 +29,153 @@
 // tank нельзя наполнить больше, чем на 100%, и нельзя опустошить ниже 0%
 // Реализовать внешний и внутренний интерфейсы.
 
-function Tank(capacity, fillingSpeed) {
-    this.capacity = capacity;
-    this.fillingSpeed = fillingSpeed;
+function Tank(_capacity, _fillingSpeed) {
+    var _capacity = _capacity;
+    var _fillingSpeed = _fillingSpeed;
+
+    this.system = {
+        portA: {
+            state: '.',
+            speed: 0
+        },
+        portB: {
+            state: '.',
+            speed: 0
+        },
+        portC: {
+            state: '.',
+            speed: 0
+        }
+    }
+
+    this.timer = function () {}
+
+    var ctx = this;
+
+    this.init = function () {
+        this.timer = setInterval(function () {
+            var speed = ctx.system.portA.speed - (ctx.system.portB.speed + ctx.system.portC.speed);
+
+            if (_capacity + speed < 100) {
+                _capacity += speed;
+                console.log(ctx.system.portA.state + ' ' + ctx.system.portB.state + ' ' + ctx.system.portC.state + ' ' + _capacity + '%');
+            } else {
+                _capacity = 100;
+                console.log('Full');
+                clearTimeout(this);
+            }
+
+            if (_capacity + speed < 1) {
+                _capacity = 0;
+                console.log('Empty :(');
+                clearTimeout(this);
+            }
+        }, 1000);
+    }
+
+    this.addOperator = function (port, speed) {
+        "use strict";
+        if(port === 'portB' && ctx.system.portB.state === '.') {
+            ctx.system.portB.state = '@';
+            ctx.system.portB.speed = speed;
+
+        } else if(port === 'portC' && ctx.system.portC.state === '.') {
+            ctx.system.portC.state = '@';
+            ctx.system.portC.speed = speed;
+        }
+    }
+
+    this.removeOperator = function (port) {
+        if(port === 'portB' && ctx.system.portB.state === '@') {
+            ctx.system.portB.state = '.';
+            ctx.system.portB.speed = 0;
+
+        } else if(port === 'portC' && ctx.system.portC.state === '@') {
+            ctx.system.portC.state = '.';
+            ctx.system.portC.speed = 0;
+        }
+    }
+
+    this.startRecoverWater = function () {
+        this.system.portA.state = '@';
+        this.system.portA.speed = _fillingSpeed;
+    }
+
+    this.stopRecoverWater = function () {
+        this.system.portA.state = '.';
+        this.system.portA.speed = 0;
+    }
+
+    this.init();
 }
 
+// var tank = new Tank(78, 1);
+// tank.startRecoverWater()
+// tank.addOperator('portB', 3);
+// tank.addOperator('portC', 3);
+// tank.addOperator('portC', 3);
+// tank.removeOperator('portB');
 
 // Задача №2
 
 // Написать функцию-конструктор Runner с приватным свойством medals, хранящим информацию о медалях. Создать геттер-сеттер, который, при запуске с одним параметром - типом медали - будет возвращать количество медалей данного типа. При запуске с двумя параметрами - типом и количеством - будет увеличивать количество медалей указанного типа на заданную величину.
 
+var Runner = function () {
+    var medals = {};
+
+    this.getSetMedals = function () {
+        if (arguments.length === 1 && arguments[0] in medals) {
+            console.log(medals[arguments[0]]);
+        } else if (arguments.length === 2) {
+            if (arguments[0] in medals) {
+                medals[arguments[0]] += arguments[1];
+            } else {
+                medals[arguments[0]] = arguments[1];
+            }
+        }
+    }
+};
+
+var rabbit = new Runner();
+rabbit.getSetMedals('Bronze', 1);
+rabbit.getSetMedals('Silver', 2);
+rabbit.getSetMedals('Silver');
 
 // Задача №3
 
 // В библиотеке хранятся книги и журналы.
 // создайте классы Book и Magazine с необходимыми свойствами ( не менее 5 для каждого класса)
 // создайте родительский класс, от которого функционально наследуют Book и Magazine. Перепишите старые классы с учетом наследования. При проектировании классов заложите возможность в будущем добавить класс Newspaper для хранения информации о газетах. В родительский класс добавьте защищенное свойство доступности издания и методы работы с этим свойством.
+
+function Library(title, description, yearRelease, printing) {
+    this.title = title;
+    this.description = description;
+    this.yearRelease = yearRelease;
+    this.printing = printing;
+
+    var isAvailable = false;
+
+    function addBooks(howMany) {
+        if (howMany > 0) {
+            isAvailable = true;
+        }
+    }
+}
+
+function Books(title, description, genre, yearRelease, printing, author) {
+    Library.apply(this, arguments);
+    this.genre = genre;
+    this.author = author;
+}
+
+function Magazines(title, description, yearRelease, printing, issueNumber) {
+    Library.apply(this, arguments);
+    this.issueNumber = issueNumber;
+}
+
+var book = new Books('Alice in Wonderland', 'wdd', 'dwd', 1999, 100, 'Ddwd');
+var magazine = new Magazines('Retro Gamer', 'wedwd', 2000, 10, 4);
+
+console.log(book.printing);
+console.log(magazine.title);
+
