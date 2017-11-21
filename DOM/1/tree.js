@@ -6,8 +6,12 @@ function walkTheDOM(node, txt) {
     node = node.firstChild;
 
     while (node) {
-        if (node.tagName) {
+        if (node.nodeType === 1) {
             console.log(txt + node.tagName);
+        } else if (node.nodeType === 3) {
+            console.log(txt + '#TEXT');
+        } else if (node.nodeType === 8) {
+            console.log(txt + '#COMMENT');
         }
         txt += "-";
 
