@@ -47,24 +47,26 @@ console.dir(pussycat.walk());
 // Дана функция-конструктор цыпленка. Перепишите конструктор для добавления методов в прототипном стиле.
 var Chicken = function(name, sex) {
     this.name = name;
-    if (sex == "male") {
-        this.crow = function() {
-            alert("Cock-A-Doodle-Doo!");
+    this.getSex = function () {
+        return sex;
         };
+    };
+
+Chicken.prototype.produceEgg = function () {
+    if (this.getSex() !== 'male') {
+        var egg = { type: null };
+        return egg;
     } else {
-        this.produceEgg = function() {
-            var egg = { type: null };
-            return egg;
+        Chicken.prototype.crow = function() {
+            console.log("Cock-A-Doodle-Doo!");
         };
     }
-    this.getSex = function() {
-        return sex;
-    };
-};
-// Chicken.prototype.constructor = Chicken;
+}
 
-Chicken.prototype.head = 2;
-// console.log(Chicken);
-var bobChicken = new Chicken('ff', 'd');
+var bobChicken = new Chicken('Bob', 'male');
+var sheilaChicken = new Chicken('Sheila', 'female');
 
-console.log(bobChicken);
+console.log(sheilaChicken.produceEgg());
+
+console.log(bobChicken.produceEgg());
+console.log(bobChicken.crow());
