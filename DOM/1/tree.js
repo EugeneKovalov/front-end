@@ -1,43 +1,22 @@
 // Написать скрипт, который выводит в консоль дерево DOM тела (body) текущей страницы, задавая отступы с учетом вложенности элементов. Примерный вывод:
-//     #text:
-//     H1
-//     - #text: Домашнее задание по JavaScript в браузере. DOM
-// SECTION
-// - #text:
-//     - H2
-// -- #text: Задача №1
-// - #text
-// - P
-function walkTheDOM(node, callback) {
-    callback(node);
+
+var txt = "";
+
+function walkTheDOM(node, txt) {
     node = node.firstChild;
 
     while (node) {
-        walkTheDOM(node, callback);
+        if (node.tagName) {
+            console.log(txt + node.tagName);
+        }
+        txt += "-";
+
+        walkTheDOM(node, txt);
+
         node = node.nextSibling;
+        txt = txt.substr(0, txt.length - 1);
     }
+
 }
 
-var txt = "";
-walkTheDOM(document.body, function (node) {
-    "use strict";
-    console.log(txt + node.tagName);
-
-    if(node.hasChildNodes()) {
-        txt += "-";
-    } else {
-        txt = "";
-    }
-});
-
-
-// var mainElement = document.body.firstElementChild;
-// while(mainElement.nextSibling) {
-//     console.log(mainElement.tagName);
-//
-//     for (var i = 0; i < mainElement.childElementCount; i++) {
-//
-//     }
-//     mainElement = mainElement.nextSibling;
-// }
-
+walkTheDOM(document.body, txt);

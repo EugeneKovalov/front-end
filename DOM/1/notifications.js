@@ -1,4 +1,4 @@
-var customMessages = [
+var notifications = [
     {
         type: "error",
         message: "TypeError: funckciya is not a function"
