@@ -20,6 +20,6 @@ function messageLifeCycle(notif, i) {
             }
             textElem.innerText = notif.message;
             mainElement.appendChild(textElem);
-        }, 3000 * i);
+        }, 1000 * i);
     })(i)
 }

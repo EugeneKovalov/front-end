@@ -9,7 +9,7 @@ function walkTheDOM(node, txt) {
         if (node.nodeType === 1) {
             console.log(txt + node.tagName);
         } else if (node.nodeType === 3) {
-            console.log(txt + '#TEXT');
+            console.log(txt + '#TEXT ' + node.textContent);
         } else if (node.nodeType === 8) {
             console.log(txt + '#COMMENT');
         }
