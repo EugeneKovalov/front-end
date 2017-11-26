@@ -20,7 +20,6 @@ function walkTheDOM(node, txt) {
         node = node.nextSibling;
         txt = txt.substr(0, txt.length - 1);
     }
-
 }
 
 walkTheDOM(document.body, txt);

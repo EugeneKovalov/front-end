@@ -30,7 +30,6 @@
 // Реализовать внешний и внутренний интерфейсы.
 
 function Tank(_capacity, _fillingSpeed) {
-    var _capacity = _capacity;
     var _fillingSpeed = _fillingSpeed;
 
     this.system = {
@@ -56,10 +55,11 @@ function Tank(_capacity, _fillingSpeed) {
         this.timer = setInterval(function () {
             var speed = ctx.system.portA.speed - (ctx.system.portB.speed + ctx.system.portC.speed);
 
-            if (_capacity + speed < 100) {
+            if (_capacity + speed > 0 && _capacity + speed < 100) {
                 _capacity += speed;
                 console.log(ctx.system.portA.state + ' ' + ctx.system.portB.state + ' ' + ctx.system.portC.state + ' ' + _capacity + '%');
-            } else {
+            }
+            if (_capacity + speed > 99) {
                 _capacity = 100;
                 console.log('Full');
                 clearTimeout(this);
@@ -74,25 +74,16 @@ function Tank(_capacity, _fillingSpeed) {
     }
 
     this.addOperator = function (port, speed) {
-        "use strict";
-        if(port === 'portB' && ctx.system.portB.state === '.') {
-            ctx.system.portB.state = '@';
-            ctx.system.portB.speed = speed;
-
-        } else if(port === 'portC' && ctx.system.portC.state === '.') {
-            ctx.system.portC.state = '@';
-            ctx.system.portC.speed = speed;
+        if (ctx.system[port].state === '.') {
+            ctx.system[port].state = '@';
+            ctx.system[port].speed = speed;
         }
     }
 
     this.removeOperator = function (port) {
-        if(port === 'portB' && ctx.system.portB.state === '@') {
-            ctx.system.portB.state = '.';
-            ctx.system.portB.speed = 0;
-
-        } else if(port === 'portC' && ctx.system.portC.state === '@') {
-            ctx.system.portC.state = '.';
-            ctx.system.portC.speed = 0;
+        if (ctx.system[port].state === '@') {
+            ctx.system[port].state = '.';
+            ctx.system[port].speed = 0;
         }
     }
 
@@ -109,12 +100,10 @@ function Tank(_capacity, _fillingSpeed) {
     this.init();
 }
 
-// var tank = new Tank(78, 1);
-// tank.startRecoverWater()
-// tank.addOperator('portB', 3);
-// tank.addOperator('portC', 3);
-// tank.addOperator('portC', 3);
-// tank.removeOperator('portB');
+var tank = new Tank(70, 16);
+tank.addOperator('portC', 15);
+tank.removeOperator('portC');
+tank.addOperator('portB', 15);
 
 // Задача №2
 
