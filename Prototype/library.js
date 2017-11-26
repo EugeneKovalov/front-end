@@ -1,23 +1,23 @@
-var arr = [4, 2, 5, 10, -4, 55];
+var arr = [4, 2, 5, 10, -4, 55, 3];
 
 //   even(callback) - вызывает callback для всех четных элементов массива
+//   если индекс[0] считать четным и тд
 Array.prototype.even = function (callback) {
     var innerArr = this;
-    innerArr.map(function(i) {
-        if (i % 2 === 0) {
-            return callback(i);
-        }
-    });
+    for (var i = 0; i < innerArr.length; i += 2) {
+        innerArr[i] = callback(innerArr[i]);
+    }
+    return innerArr;
 };
 
-//    odd(callback) - вызывает callback для всех нечетных элементов массива
+//   odd(callback) - вызывает callback для всех нечетных элементов массива
+//   если индекс[0] считать четным и тд
 Array.prototype.odd = function (callback) {
     var innerArr = this;
-    innerArr.map(function(i) {
-        if (i % 2 !== 0) {
-            return callback(i);
-        }
-    });
+    for (var i = 1; i < innerArr.length; i += 2) {
+        innerArr[i] = callback(innerArr[i]);
+    }
+    return innerArr;
 };
 
 //     shuffle - возвращает перемешаный массив

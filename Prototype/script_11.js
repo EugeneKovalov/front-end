@@ -17,13 +17,12 @@ var pet = {
 var Cat = function() {
     this.furType = "NiceTouch kitty";
     this.tailLength = "A gr8 tail, btw not a tail as a story.";
-
-    this.meow = function() {
-        return 'RRRRROOOOOAAAARRR! ' + ' Yes, I\'m lion, not a some pussycat';
-    };
-
-    this.__proto__ = pet;
 };
+
+Cat.prototype = pet;
+Cat.prototype.meow = function () {
+    console.log('RRRRROOOOOAAAARRR! Yes, I\'m lion, not a some pussycat')
+}
 
 var Dog = function() {
     this.furType = "strong raw type fur";
@@ -32,9 +31,12 @@ var Dog = function() {
     this.bark = function() {
         return 'Woof-woof! ' + ' - very deep bass sound';
     };
-
-    this.__proto__ = pet;
 };
+
+Dog.prototype = pet;
+Dog.prototype.bark = function () {
+    console.log('Woof-woof! - very deep bass sound');
+}
 
 var pussycat = new Cat();
 
