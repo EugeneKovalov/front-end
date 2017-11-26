@@ -3,23 +3,31 @@
 var mainElement = document.body;
 var textElem = document.createElement('my-tag');
 
-for(var i = 0; i < notifications.length; i++) {
-    messageLifeCycle(notifications[i], i);
-    textElem.remove();
+function notifyMe() {
+    for(var i = 0; i <= notifications.length; i++) {
+        messageLifeCycle(notifications[i], i);
+    }
 }
 
 function messageLifeCycle(notif, i) {
     (function(i) {
         setTimeout(function() {
-            if (notif.type === 'error') {
-                textElem.style.backgroundColor = '#F30F18';
-            } else if (notif.type === 'warn') {
-                textElem.style.backgroundColor = '#0000FF';
-            } else if (notif.type === 'info') {
-                textElem.style.backgroundColor = '#1FBBD8';
+            if (i === notifications.length) {
+                textElem.remove();
+            } else if (i < notifications.length) {
+                if (notif.type === 'error') {
+                    textElem.style.backgroundColor = '#F30F18';
+                } else if (notif.type === 'warn') {
+                    textElem.style.backgroundColor = '#0000FF';
+                } else if (notif.type === 'info') {
+                    textElem.style.backgroundColor = '#1FBBD8';
+                }
+
+                textElem.innerText = notif.message;
+                mainElement.appendChild(textElem);
             }
-            textElem.innerText = notif.message;
-            mainElement.appendChild(textElem);
         }, 1000 * i);
     })(i)
 }
+
+notifyMe();
