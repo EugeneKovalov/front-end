@@ -30,8 +30,6 @@
 // Реализовать внешний и внутренний интерфейсы.
 
 function Tank(_capacity, _fillingSpeed) {
-    var _fillingSpeed = _fillingSpeed;
-
     this.system = {
         portA: {
             state: '.',
@@ -53,22 +51,32 @@ function Tank(_capacity, _fillingSpeed) {
 
     this.init = function () {
         this.timer = setInterval(function () {
+
             var speed = ctx.system.portA.speed - (ctx.system.portB.speed + ctx.system.portC.speed);
 
             if (_capacity + speed > 0 && _capacity + speed < 100) {
                 _capacity += speed;
+
+                console.clear();
                 console.log(ctx.system.portA.state + ' ' + ctx.system.portB.state + ' ' + ctx.system.portC.state + ' ' + _capacity + '%');
             }
+
             if (_capacity + speed > 99) {
                 _capacity = 100;
                 console.log('Full');
+
+                console.clear();
                 clearTimeout(this);
+                ctx.timer = undefined;
             }
 
             if (_capacity + speed < 1) {
                 _capacity = 0;
                 console.log('Empty :(');
+
+                console.clear();
                 clearTimeout(this);
+                ctx.timer = undefined;
             }
         }, 1000);
     }

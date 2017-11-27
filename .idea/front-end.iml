@@ -8,5 +8,6 @@
     <orderEntry type="library" name="react.development" level="application" />
     <orderEntry type="library" name="react-DefinitelyTyped" level="application" />
     <orderEntry type="module" module-name="ajaxLearn" />
+    <orderEntry type="module" module-name="js_study" />
   </component>
 </module>

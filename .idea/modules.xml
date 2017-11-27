@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../ajaxLearn/.idea/ajaxLearn.iml" filepath="$PROJECT_DIR$/../ajaxLearn/.idea/ajaxLearn.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/front-end.iml" filepath="$PROJECT_DIR$/.idea/front-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../js_study/.idea/js_study.iml" filepath="$PROJECT_DIR$/../js_study/.idea/js_study.iml" />
     </modules>
   </component>
 </project>
