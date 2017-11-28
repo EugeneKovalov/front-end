@@ -57,7 +57,6 @@ function Tank(_capacity, _fillingSpeed) {
             if (_capacity + speed > 0 && _capacity + speed < 100) {
                 _capacity += speed;
 
-                console.clear();
                 console.log(ctx.system.portA.state + ' ' + ctx.system.portB.state + ' ' + ctx.system.portC.state + ' ' + _capacity + '%');
             }
 
@@ -65,8 +64,7 @@ function Tank(_capacity, _fillingSpeed) {
                 _capacity = 100;
                 console.log('Full');
 
-                console.clear();
-                clearTimeout(this);
+                clearTimeout(ctx.timer);
                 ctx.timer = undefined;
             }
 
@@ -74,8 +72,7 @@ function Tank(_capacity, _fillingSpeed) {
                 _capacity = 0;
                 console.log('Empty :(');
 
-                console.clear();
-                clearTimeout(this);
+                clearTimeout(ctx.timer);
                 ctx.timer = undefined;
             }
         }, 1000);

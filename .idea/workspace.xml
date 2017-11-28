@@ -14,21 +14,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="script_oop.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="script_oop.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/OOP/script_oop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="113" selection-end-column="30" />
+            <state relative-caret-position="36">
+              <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/OOP/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+            <state relative-caret-position="186">
+              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -194,8 +194,8 @@
         <option value="$PROJECT_DIR$/events/modal.js" />
         <option value="$PROJECT_DIR$/events/parallax.html" />
         <option value="$PROJECT_DIR$/Prototype/library.js" />
-        <option value="$PROJECT_DIR$/OOP/script_oop.js" />
         <option value="$PROJECT_DIR$/OOP/index.html" />
+        <option value="$PROJECT_DIR$/OOP/script_oop.js" />
       </list>
     </option>
   </component>
@@ -417,14 +417,7 @@
       <workItem from="1511804948172" duration="598000" />
       <workItem from="1511806624328" duration="10000" />
       <workItem from="1511818453560" duration="782000" />
-      <workItem from="1511887497273" duration="521000" />
-    </task>
-    <task id="LOCAL-00001" summary="init commit">
-      <created>1504505297326</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1504505297326</updated>
+      <workItem from="1511887497273" duration="645000" />
     </task>
     <task id="LOCAL-00002" summary="init commit">
       <created>1504505318202</created>
@@ -762,11 +755,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511818633241</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="tank changes">
+      <created>1511888174739</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1511888174740</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273474000" />
+    <option name="totallyTimeSpent" value="273598000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -831,10 +831,10 @@
     <MESSAGE value="js_oop Prototype" />
     <MESSAGE value="js dom &#10;highlights" />
     <MESSAGE value="js dom &#10;info&#10;tree" />
-    <MESSAGE value="tank changes" />
     <MESSAGE value="info changes" />
     <MESSAGE value="library changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="library changes" />
+    <MESSAGE value="tank changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="tank changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1104,18 +1104,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OOP/script_oop.js">
+    <entry file="file://$PROJECT_DIR$/OOP/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="113" selection-end-column="30" />
+        <state relative-caret-position="186">
+          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OOP/index.html">
+    <entry file="file://$PROJECT_DIR$/OOP/script_oop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+        <state relative-caret-position="36">
+          <caret line="67" column="38" lean-forward="true" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
           <folding />
         </state>
       </provider>
