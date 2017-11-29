@@ -105,7 +105,7 @@ function Tank(_capacity, _fillingSpeed) {
     this.init();
 }
 
-var tank = new Tank(70, 16);
+var tank = new Tank(100, 16);
 tank.addOperator('portC', 15);
 tank.removeOperator('portC');
 tank.addOperator('portB', 20);
