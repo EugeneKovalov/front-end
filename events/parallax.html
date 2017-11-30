@@ -1,68 +1,65 @@
 <!DOCTYPE html>
-<!--suppress ALL -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Parallax</title>
 
     <style>
-        body {
+        #background {
+            min-height: 1000px;
+            min-width: 1000px;
+            position: relative;
             background: url("bg.gif") repeat;
-        }
-
-        .layer {
-            position: absolute;
-
-            /*left: 50%;*/
-            /*top: 50%;*/
-            /*transform: translate(-50%, -50%);*/
         }
 
         #layer-1 {
             width: 400px;
             height: 400px;
             background-color: #2aabd2;
-
+            z-index: 1;
         }
+
         #layer-2 {
             width: 300px;
             height: 300px;
             background-color: #2b542c;
+            z-index: 2;
         }
         #layer-3 {
             width: 200px;
             height: 200px;
             background-color: #9b59b6;
+            z-index: 3;
+        }
+        .layer {
+            position: absolute;
+            top:20%;
+            left:40%;
         }
     </style>
 </head>
 <body>
-<!--Сверстать страницу, состоящую из трех слоев квадратной формы со сторонами 400, 300 и 200 пикселей и фона в виде паттерна. При перемещении курсора на странице слои перемещаются в стороны, противоположные от перемещений курсора. Чем больше слой, тем на большее расстояние он перемещается. Фон страницы перемещается в том же направлении, что и курсор. Начальное положение слоев произвольно, но при помещении курсора в центр страницы слои тоже центрируются.-->
-
-<!--Пример работы скрипта на видео https://youtu.be/fT1tFKbGYWQ-->
-
-<div id="background"></div>
-
-<div id="layer-1" class="layer">
-    <div id="layer-2" class="layer">
-        <div id="layer-3" class="layer"></div>
-    </div>
+<div id="background">
+    <div id="layer-1" class="layer"></div>
+    <div id="layer-2" class="layer"></div>
+    <div id="layer-3" class="layer"></div>
 </div>
-
-<p id="info"></p>
-
-
 </body>
+
 <script>
     const back = document.getElementById('background');
     const layer1 = document.getElementById('layer-1');
     const layer2 = document.getElementById('layer-2');
     const layer3 = document.getElementById('layer-3');
 
-    document.addEventListener("mousemove", function (e) {
-        var x = -(e.pageX + this.offsetLeft) / 20;
-        var y = -(e.pageY + this.offsetTop) / 20;
-        layer1.style.background - position = x + 'px' + y + 'px';
+    back.addEventListener('mousemove', function (e) {
+        let pageX = e.clientX - 550;
+        let pageY = e.clientY - 300;
+
+        layer1.style.transform = 'translateX(' + pageX / 70 + '%) translateY(' + pageY / 50 + '%)';
+        layer2.style.transform = 'translateX(' + pageX / 10 + '%) translateY(' + pageY / 7 + '%)';
+        layer3.style.transform = 'translateX(' + pageX / 4 + '%) translateY(' + pageY / 3 + '%)';
+        back.style = 'background-position:' + pageX / 30 +'px' + ' ' + pageY / 30 + 'px';
     });
 </script>
 </html>
