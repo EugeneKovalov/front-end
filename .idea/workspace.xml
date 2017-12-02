@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/modal.html" afterPath="$PROJECT_DIR$/events/modal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/modal.js" afterPath="$PROJECT_DIR$/events/modal.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/parallax.html" afterPath="$PROJECT_DIR$/events/parallax.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parallax.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="parallax.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/events/parallax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
-              <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="277">
+              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -46,7 +44,7 @@
       <file leaf-file-name="modal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/events/modal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="73">
               <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
               <folding />
             </state>
@@ -103,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/events/modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+            <state relative-caret-position="832">
+              <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -195,9 +193,9 @@
         <option value="$PROJECT_DIR$/Prototype/library.js" />
         <option value="$PROJECT_DIR$/OOP/index.html" />
         <option value="$PROJECT_DIR$/OOP/script_oop.js" />
-        <option value="$PROJECT_DIR$/events/parallax.html" />
         <option value="$PROJECT_DIR$/events/modal.html" />
         <option value="$PROJECT_DIR$/events/modal.js" />
+        <option value="$PROJECT_DIR$/events/parallax.html" />
       </list>
     </option>
   </component>
@@ -494,14 +492,7 @@
       <workItem from="1511818453560" duration="782000" />
       <workItem from="1511887497273" duration="10954000" />
       <workItem from="1512053958603" duration="1508000" />
-      <workItem from="1512207711672" duration="4029000" />
-    </task>
-    <task id="LOCAL-00005" summary="articles added">
-      <created>1504935001456</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1504935001456</updated>
+      <workItem from="1512207711672" duration="4190000" />
     </task>
     <task id="LOCAL-00006" summary="HW - 2, CSS added">
       <created>1505377464610</created>
@@ -839,11 +830,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512049506191</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="events completed">
+      <created>1512212669310</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1512212669310</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289444000" />
+    <option name="totallyTimeSpent" value="289605000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -913,7 +911,8 @@
     <MESSAGE value="tank changes" />
     <MESSAGE value="ev - in progress" />
     <MESSAGE value="parralax - completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="parralax - completed" />
+    <MESSAGE value="events completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="events completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1213,17 +1212,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/events/parallax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="61" column="41" lean-forward="true" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/events/modal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="73">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
           <folding />
         </state>
@@ -1231,8 +1222,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/events/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        <state relative-caret-position="832">
+          <caret line="52" column="33" lean-forward="false" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events/parallax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
           <folding />
         </state>
       </provider>
