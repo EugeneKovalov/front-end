@@ -11,10 +11,6 @@ function createModal(key) {
     modal.setAttribute("id", "myModal");
     modal.setAttribute("class", "modal");
 
-    modal.style.display = "block";
-    modal.style.left = widthEl + 'px';
-    modal.style.top = heightEl + 'px';
-
     let modalContent = document.createElement('div');
     modalContent.setAttribute("id", "modal-content");
 
@@ -25,6 +21,10 @@ function createModal(key) {
     let contentSpan = document.createElement('span');
     contentSpan.setAttribute("id", "content");
     contentSpan.innerText = 'You are pressed: ' +  String.fromCharCode(key);
+
+    modal.style.display = "block";
+    modal.style.left = widthEl + 'px';
+    modal.style.top = heightEl + 'px';
 
     modalContent.appendChild(closeBtn);
     modal.appendChild(modalContent);
