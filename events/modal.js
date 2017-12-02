@@ -1,5 +1,6 @@
 let widthEl = 0;
 let heightEl = 0;
+let priority = 1;
 
 document.body.addEventListener('keypress', function (e) {
     createModal(e.which);
@@ -47,6 +48,8 @@ function addDraggable(element) {
         let shiftY = e.pageY - element.getBoundingClientRect().top + pageXOffset;
 
         moveTo(e);
+
+        element.style.zIndex = ++priority;
 
         function moveTo(e) {
             element.style.left = e.pageX - shiftX + 'px';
