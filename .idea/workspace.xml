@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/es6/script_17.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/events/modal.js" afterPath="$PROJECT_DIR$/events/modal.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,28 +14,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OOP/index.html">
+      <file leaf-file-name="script_oop.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOP/script_oop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="42" />
+            <state relative-caret-position="589">
+              <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bg.gif" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/events/bg.gif">
-          <provider selected="true" editor-type-id="images">
-            <state />
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOP/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parallax.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/events/parallax.html">
+      <file leaf-file-name="script_17.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/es6/script_17.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="31" lean-forward="true" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            <state relative-caret-position="192">
+              <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_1/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1916">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_Objects/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="script_11.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Prototype/script_11.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -51,46 +94,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hello.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../js_study/JS/june/cw_8_modules/my_module/hello.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../js_study/JS/june/cw_8_modules/my_module/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="indes.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../js_study/JS/june/hw_7/indes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../js_study/JS/june/hw_7/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../js_study/WEB/bootcamp/color_game/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modal.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/events/modal.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+            <state relative-caret-position="229">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +120,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -145,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/HTML_basics/index.html" />
         <option value="$PROJECT_DIR$/CSS_1/css/style.css" />
         <option value="$PROJECT_DIR$/CSS_1/index.html" />
         <option value="$PROJECT_DIR$/your_pet/texts.txt" />
@@ -191,11 +193,12 @@
         <option value="$PROJECT_DIR$/DOM/1/notifications.js" />
         <option value="$PROJECT_DIR$/events/moda;.html" />
         <option value="$PROJECT_DIR$/Prototype/library.js" />
-        <option value="$PROJECT_DIR$/OOP/index.html" />
         <option value="$PROJECT_DIR$/OOP/script_oop.js" />
         <option value="$PROJECT_DIR$/events/parallax.html" />
         <option value="$PROJECT_DIR$/events/modal.html" />
         <option value="$PROJECT_DIR$/events/modal.js" />
+        <option value="$PROJECT_DIR$/OOP/index.html" />
+        <option value="$PROJECT_DIR$/es6/script_17.js" />
       </list>
     </option>
   </component>
@@ -277,90 +280,29 @@
             <path>
               <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
               <item name="front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="events" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="es6" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JS_BASICS" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JS_BASICS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JS_2" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="june" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JS_BASICS" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="JS_Objects" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="june" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cw_8_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="june" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cw_8_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="my_module" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="june" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cw_11_sql" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="june" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="hw_7" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="june" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="hw_7" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node_modules" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node-express" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="JS" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node-express" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="node" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WEB" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WEB" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootcamp" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js_study" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="WEB" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="bootcamp" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="color_game" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="OOP" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -402,15 +344,15 @@
     </excluded-roots>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JS_2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/CSS" />
       <recent name="$PROJECT_DIR$/JS_BASICS" />
       <recent name="$PROJECT_DIR$/../react-course-projects/indecision-app" />
       <recent name="$PROJECT_DIR$/your_pet" />
-      <recent name="$PROJECT_DIR$/CSS_1/img" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/JS_2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -425,26 +367,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.script_oop.js">
-    <configuration name="highlight.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="highlight.js" working-dir="$PROJECT_DIR$/DOM/1" />
-    <configuration name="interface.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/../ajaxLearn/interface.php" />
+  <component name="RunManager" selected="Node.js.script_17.js">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/front-end/OOP/index.html" />
     <configuration name="library.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="library.js" working-dir="$PROJECT_DIR$/Prototype" />
     <configuration name="script_11.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="script_11.js" working-dir="$PROJECT_DIR$/Prototype" />
+    <configuration name="script_17.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="script_17.js" working-dir="$PROJECT_DIR$/es6" />
     <configuration name="script_oop.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="script_oop.js" working-dir="$PROJECT_DIR$/OOP" />
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Node.js.script_11.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.library.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.highlight.js" />
-      <item index="3" class="java.lang.String" itemvalue="PHP Script.interface.php" />
-      <item index="4" class="java.lang.String" itemvalue="Node.js.script_oop.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.script_oop.js" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.script_17.js" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.script_oop.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.library.js" />
-        <item index="2" class="java.lang.String" itemvalue="Node.js.script_11.js" />
-        <item index="3" class="java.lang.String" itemvalue="PHP Script.interface.php" />
-        <item index="4" class="java.lang.String" itemvalue="Node.js.highlight.js" />
+        <item index="0" class="java.lang.String" itemvalue="Node.js.script_17.js" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.script_oop.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.library.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.script_11.js" />
       </list>
     </recent_temporary>
   </component>
@@ -493,14 +435,7 @@
       <workItem from="1511887497273" duration="10954000" />
       <workItem from="1512053958603" duration="1508000" />
       <workItem from="1512207711672" duration="4701000" />
-      <workItem from="1512221910137" duration="99000" />
-    </task>
-    <task id="LOCAL-00008" summary="HW - 2, CSS edited">
-      <created>1505730112435</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1505730112435</updated>
+      <workItem from="1512221910137" duration="5031000" />
     </task>
     <task id="LOCAL-00009" summary="HW - 2, CSS edited">
       <created>1505804737903</created>
@@ -838,11 +773,18 @@
       <option name="project" value="LOCAL" />
       <updated>1512213445520</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="events completed">
+      <created>1512222008021</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1512222008021</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290215000" />
+    <option name="totallyTimeSpent" value="295147000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -857,16 +799,17 @@
     <frame x="0" y="23" width="1280" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17124394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="ReactNative" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35885885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35885885" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17124394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.398827" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -875,7 +818,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -922,18 +864,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/JS_1/вц.js" />
     <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_2/calc.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_1/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -979,20 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="2" lean-forward="false" selection-start-line="4" selection-start-column="2" selection-end-line="7" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_Objects/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="669">
-          <caret line="99" column="17" lean-forward="false" selection-start-line="99" selection-start-column="8" selection-end-line="99" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_2/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1129,22 +1049,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Prototype/script_11.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OOP/script_oop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -1197,14 +1101,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OOP/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../js_study/JS/june/hw_7/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1231,8 +1127,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/events/modal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="229">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Prototype/script_11.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP/script_oop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="106" column="0" lean-forward="false" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOP/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1916">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_1/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="99" column="9" lean-forward="false" selection-start-line="99" selection-start-column="9" selection-end-line="99" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS_BASICS/JS_Objects/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/es6/script_17.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding />
         </state>
       </provider>
