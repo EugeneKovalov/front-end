@@ -30,6 +30,8 @@
 // Реализовать внешний и внутренний интерфейсы.
 
 function Tank(_capacity, _fillingSpeed) {
+    var ctx = this;
+
     this.system = {
         portA: {
             state: '.',
@@ -45,9 +47,7 @@ function Tank(_capacity, _fillingSpeed) {
         }
     }
 
-    this.timer = function () {}
-
-    var ctx = this;
+    this.timer = undefined;
 
     this.init = function () {
         this.timer = setInterval(function () {
@@ -83,6 +83,10 @@ function Tank(_capacity, _fillingSpeed) {
             ctx.system[port].state = '@';
             ctx.system[port].speed = speed;
         }
+
+        if (_capacity === 100) {
+            this.init();
+        }
     }
 
     this.removeOperator = function (port) {
@@ -95,6 +99,10 @@ function Tank(_capacity, _fillingSpeed) {
     this.startRecoverWater = function () {
         this.system.portA.state = '@';
         this.system.portA.speed = _fillingSpeed;
+
+        if (_capacity === 0) {
+            this.init();
+        }
     }
 
     this.stopRecoverWater = function () {
@@ -105,10 +113,9 @@ function Tank(_capacity, _fillingSpeed) {
     this.init();
 }
 
-var tank = new Tank(100, 16);
-tank.addOperator('portC', 15);
-tank.removeOperator('portC');
-tank.addOperator('portB', 20);
+var tank = new Tank(23, 16);
+tank.addOperator('portC', 5);
+tank.startRecoverWater();
 
 // Задача №2
 
