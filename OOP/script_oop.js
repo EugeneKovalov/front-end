@@ -108,6 +108,10 @@ function Tank(_capacity, _fillingSpeed) {
     this.stopRecoverWater = function () {
         this.system.portA.state = '.';
         this.system.portA.speed = 0;
+
+        if (this.system.portB.state === '@' || this.system.portC.state === '@') {
+            this.init();
+        }
     }
 
     this.init();

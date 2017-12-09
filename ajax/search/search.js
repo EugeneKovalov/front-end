@@ -33,19 +33,20 @@ function findHint() {
 }
 
 function details() {
-    let detailContainer = document.getElementsByClassName('result')[0];
-    detailContainer.innerText = this.innerText;
-
     let xhr = new XMLHttpRequest();
+    let body = 'input=' + encodeURIComponent(this.innerText);
+
     xhr.open('POST', 'search.php', true);
-    xhr.setRequestHeader('Content-Type', 'text/plain');
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    xhr.send(body);
+
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {
-            // let json = JSON.parse(xhr.responseText);
-            // console.log(json);
+            let json = JSON.parse(xhr.responseText);
+            document.getElementById('title').innerHTML = json[0].title;
+            document.getElementById('content').innerHTML = json[0].article;
         }
     };
-    xhr.send(this.innerText);
 }
 
 document.getElementById('search').addEventListener('keyup', findHint);

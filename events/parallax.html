@@ -33,8 +33,6 @@
         }
         .layer {
             position: absolute;
-            top: 20%;
-            left: 40%;
         }
     </style>
 </head>
@@ -51,15 +49,38 @@
     let layer1 = document.getElementById('layer-1');
     let layer2 = document.getElementById('layer-2');
     let layer3 = document.getElementById('layer-3');
+    let layerContainer = [layer1, layer2, layer3];
+    const clientH = document.documentElement.clientHeight;
+    const clientW = document.documentElement.clientWidth;
+
+    let tmp = 400;
+
+    for (let el in layerContainer) {
+        layerContainer[el].style.top = formulaForPosition(clientH, tmp) + '%';
+        layerContainer[el].style.left = formulaForPosition(clientW, tmp) + '%';
+        tmp -= 100;
+    }
 
     back.addEventListener('mousemove', function (e) {
-        let pageX = e.clientX - 550;
-        let pageY = e.clientY - 300;
+        let pageX = e.clientX;
+        let pageY = e.clientY;
+        let tmp = 50;
 
-        layer1.style.transform = 'translateX(' + pageX / 70 + '%) translateY(' + pageY / 50 + '%)';
-        layer2.style.transform = 'translateX(' + pageX / 10 + '%) translateY(' + pageY / 7 + '%)';
-        layer3.style.transform = 'translateX(' + pageX / 4 + '%) translateY(' + pageY / 3 + '%)';
-        back.style = 'background-position:' + pageX / 30 +'px' + ' ' + pageY / 30 + 'px';
+        for (let el in layerContainer) {
+            layerContainer[el].style.marginLeft = formulaForMoving(pageX, clientW, tmp) + '%';
+            layerContainer[el].style.marginTop = formulaForMoving(pageY, clientH, tmp) + '%';
+            tmp += 50;
+        }
+
+        back.style = 'background-position:' + pageX / 30 + 'px' + ' ' + pageY / 30 + 'px';
     });
+
+    function formulaForPosition(widthHeigth ,numb) {
+        return ((((widthHeigth - numb) / 2) * 100) / widthHeigth);
+    }
+
+    function formulaForMoving(xY, widthHeigth ,numb) {
+        return -((((xY - (widthHeigth / 2)) / 2) * numb) / widthHeigth);
+    }
 </script>
 </html>

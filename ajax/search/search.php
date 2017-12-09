@@ -49,5 +49,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $a = [];
+    $input = strtolower($_POST['input']);
+    if ($input !== 'ad') {
+        $a = array_filter($articles, function ($el) use ($input) {
+            if (substr_count(strtolower($el['article']), $input) > 1) {
+                return $el;
+            }
+        });
+    } else if ($input === 'ad') {
+        array_push($a, $articles[count($articles) -1]);
+    }
 
+    echo json_encode(array_values($a));
 }
