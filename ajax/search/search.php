@@ -56,11 +56,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $a = [];
     $input = strtolower($_POST['input']);
     if ($input !== 'ad') {
-        $a = array_filter($articles, function ($el) use ($input) {
-            if (substr_count(strtolower($el['article']), $input) > 1) {
-                return $el;
+        for ($i = 0; $i < count($articles); $i++) {
+            if (substr_count(strtolower($articles[$i]['title']), $input) >= 1) {
+                array_push($a, $articles[$i]);
+                break;
             }
-        });
+        }
     } else if ($input === 'ad') {
         array_push($a, $articles[count($articles) -1]);
     }
