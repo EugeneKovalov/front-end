@@ -11,7 +11,7 @@ $articles = [
     ],
     [
         'title' => 'downtown is where u been',
-        'article' => 'Get down to downtown. In this town all are down.'
+        'article' => 'Get down to downtown. In this town all are down. downtown'
     ],
     [
         'title' => 'Javascript for all!',
