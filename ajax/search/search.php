@@ -10,6 +10,10 @@ $articles = [
         'article' => 'Максимально улучшенное руководство по Java. Java для всех.'
     ],
     [
+        'title' => 'downtown is where u been',
+        'article' => 'Get down to downtown. In this town all are down.'
+    ],
+    [
         'title' => 'Javascript for all!',
         'article' => 'Be Javascript cause Javascript is everywhere!'
     ],
