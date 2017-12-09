@@ -46,11 +46,19 @@ function showBacket(price = 0, countItems = 0) {
     if (countItems === 0) {
         return 'В корзине нет товаров';
     }
-    return `В козрине ${countItems} товара на сумму ${price} грн.`;
+
+    let word = countItems % 10 === 1 ? 'товар' : 'товара';
+
+    return `В козрине ${countItems} ${word} на сумму ${price} грн.`;
 }
 
 console.log(showBacket(3, 0));
 console.log(showBacket(10, 1));
+console.log(showBacket(1, 201));
+console.log(showBacket(31, 31));
+console.log(showBacket(32, 32));
+console.log(showBacket(3, 3));
+console.log(showBacket(99, 99));
 
 // акция =)
 console.log(showBacket(0, 4));
