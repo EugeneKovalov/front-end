@@ -2,8 +2,6 @@
 ini_set('display_errors', 1);
 error_reporting(1);
 
-sleep(1);
-
 $hintList = ['javascript', 'java', 'downLoad', 'downtown', 'Dow!', 'Ad'];
 $articles = [
     [
