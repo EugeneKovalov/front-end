@@ -7,6 +7,8 @@ $data = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Su
 
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && $_GET['limit'])
 {
+    $start = $_GET['from'];
+    $to = $_GET['from'] + $_GET['limit'];
     $output = json_encode(array_values($data));
-    echo "addElements($output);";
+    echo "addElements($start, $to, $output);";
 }

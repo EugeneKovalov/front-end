@@ -1,19 +1,22 @@
-let limit = 5;
-let from = Math.ceil(document.documentElement.clientHeight / 300);
-let initial = Math.ceil(document.documentElement.clientHeight / 300) - 1;
+let limit = Math.ceil(document.documentElement.clientHeight / 300);
+let from = 1;
 
-function addElements(days) {
-    for (let i = from - initial, j = 0; i < from+limit; i++, j++) {
+function addElements(start, to, days) {
+    for (let i = start, j = 0; i < to; i++, j++) {
         let div = document.createElement('div');
         let span = document.createElement('span');
+
         span.innerText = '' + i + ' : ' + days[j];
+
         div.setAttribute('class', 'container');
         div.appendChild(span);
         document.body.appendChild(div);
     }
-    from += initial + limit;
+    from = start;
+    limit = 5;
+
     document.head.removeChild(document.getElementById('tmp'));
-    console.log(document.getElementsByClassName('container').length);
+    document.getElementById('counter').innerText = '' + document.getElementsByClassName('container').length;
 }
 
 function update() {
