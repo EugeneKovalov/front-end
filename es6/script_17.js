@@ -1,5 +1,4 @@
 // 1
-
 let blackCat = {
     fur: "black",
     age: 11
@@ -12,7 +11,6 @@ let blackCat = {
 console.log(blackCat);
 
 // 2
-
 let mergeObjects = (obj1, obj2) => {
     let result = {};
 
@@ -41,7 +39,6 @@ console.log(
 );
 
 // 3
-
 function showBacket(price = 0, countItems = 0) {
     if (countItems === 0) {
         return 'В корзине нет товаров';

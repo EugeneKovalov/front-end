@@ -2,9 +2,9 @@ let limit = Math.ceil(document.documentElement.clientHeight / 300);
 let from = 1;
 
 function addElements(start, to, days) {
-    console.log(start + ' st');
-    console.log(to + ' to');
-    console.log(days);
+    // console.log(start + ' st');
+    // console.log(to + ' to');
+    // console.log(days);
     for (let i = 0; start < to; ++start, i++) {
         let div = document.createElement('div');
         let span = document.createElement('span');
