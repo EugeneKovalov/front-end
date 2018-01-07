@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ajax/scroll/days.php" afterPath="$PROJECT_DIR$/ajax/scroll/days.php" />
-      <change beforePath="$PROJECT_DIR$/ajax/scroll/scroll.html" afterPath="$PROJECT_DIR$/ajax/scroll/scroll.html" />
       <change beforePath="$PROJECT_DIR$/ajax/scroll/scroll.js" afterPath="$PROJECT_DIR$/ajax/scroll/scroll.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="days.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/scroll/days.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="220">
+              <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,8 +37,8 @@
       <file leaf-file-name="scroll.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+            <state relative-caret-position="264">
+              <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -109,8 +107,8 @@
       <file leaf-file-name="scroll.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+            <state relative-caret-position="88">
+              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -433,14 +431,7 @@
       <workItem from="1513605059891" duration="296000" />
       <workItem from="1515080011688" duration="1266000" />
       <workItem from="1515134686299" duration="19077000" />
-      <workItem from="1515312084355" duration="1703000" />
-    </task>
-    <task id="LOCAL-00019" summary="JS_2 Added">
-      <created>1507495947918</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1507495947918</updated>
+      <workItem from="1515312084355" duration="3901000" />
     </task>
     <task id="LOCAL-00020" summary="JS_2 fixes">
       <created>1507618609267</created>
@@ -778,11 +769,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515162305297</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="ajax scroll - in progress">
+      <created>1515313797939</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1515313797940</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342315000" />
+    <option name="totallyTimeSpent" value="344513000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1048,26 +1046,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/scroll/days.php">
+    <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="28" />
+        <state relative-caret-position="88">
+          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.html">
+    <entry file="file://$PROJECT_DIR$/ajax/scroll/days.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        <state relative-caret-position="220">
+          <caret line="10" column="21" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="1" lean-forward="true" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="264">
+          <caret line="12" column="47" lean-forward="true" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
           <folding />
         </state>
       </provider>

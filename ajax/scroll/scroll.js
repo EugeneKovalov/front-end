@@ -1,19 +1,20 @@
 let limit = Math.ceil(document.documentElement.clientHeight / 300);
-let from = 1;
+let from = 0;
 
 function addElements(start, to, days) {
-    for (let i = start, j = 0; i < to; i++, j++) {
+    console.log(start + ' st');
+    console.log(to + ' to');
+    for (let i = 0; start < to; ++start, i++) {
         let div = document.createElement('div');
         let span = document.createElement('span');
 
-        span.innerText = '' + i + ' : ' + days[j];
+        span.innerText = start + ' : ' + days[i];
 
         div.setAttribute('class', 'container');
         div.appendChild(span);
         document.body.appendChild(div);
     }
     from = start;
-    limit = 5;
 
     document.head.removeChild(document.getElementById('tmp'));
     document.getElementById('counter').innerText = '' + document.getElementsByClassName('container').length;
@@ -27,6 +28,7 @@ function update() {
 }
 
 update();
+limit = 5;
 
 window.onscroll = function() {
     let doc = document.documentElement;
