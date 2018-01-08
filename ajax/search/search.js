@@ -50,4 +50,6 @@ function details() {
     };
 }
 
-document.getElementById('search').addEventListener('keyup', setInterval(findHint, 500));
+document.getElementById('search').addEventListener('keyup', function () {
+    setInterval(findHint, 500);
+});
