@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/ajax/scroll/scroll.js" afterPath="$PROJECT_DIR$/ajax/scroll/scroll.js" />
+      <change beforePath="$PROJECT_DIR$/ajax/scroll/scroll.html" afterPath="$PROJECT_DIR$/ajax/scroll/scroll.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scroll.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scroll.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+            <state relative-caret-position="242">
+              <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -37,8 +37,8 @@
       <file leaf-file-name="search.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/search/search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="788">
-              <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+            <state relative-caret-position="682">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -47,28 +47,28 @@
       <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ajax/search/search.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scroll.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="search.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ajax/search/search.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scroll.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="19" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script_17.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/es6/script_17.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -190,7 +190,6 @@
         <option value="$PROJECT_DIR$/ajax/search/search.html" />
         <option value="$PROJECT_DIR$/ajax/search/search.php" />
         <option value="$PROJECT_DIR$/ajax/scroll/task_tmp" />
-        <option value="$PROJECT_DIR$/ajax/scroll/scroll.html" />
         <option value="$PROJECT_DIR$/ajax/scroll/dwd.php" />
         <option value="$PROJECT_DIR$/ajax/scroll/days.php" />
         <option value="$PROJECT_DIR$/tic-tac-toe/info" />
@@ -198,8 +197,9 @@
         <option value="$PROJECT_DIR$/tic-tac-toe/style.css" />
         <option value="$PROJECT_DIR$/tic-tac-toe/index.html" />
         <option value="$PROJECT_DIR$/tic-tac-toe/script.js" />
-        <option value="$PROJECT_DIR$/ajax/search/search.js" />
         <option value="$PROJECT_DIR$/ajax/scroll/scroll.js" />
+        <option value="$PROJECT_DIR$/ajax/search/search.js" />
+        <option value="$PROJECT_DIR$/ajax/scroll/scroll.html" />
       </list>
     </option>
   </component>
@@ -282,6 +282,12 @@
               <item name="front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ajax" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="scroll" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
+              <item name="front-end" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ajax" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="search" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="front-end" type="b2602c69:ProjectViewProjectNode" />
@@ -436,21 +442,7 @@
       <workItem from="1515080011688" duration="1266000" />
       <workItem from="1515134686299" duration="19077000" />
       <workItem from="1515312084355" duration="13899000" />
-      <workItem from="1515440276011" duration="3568000" />
-    </task>
-    <task id="LOCAL-00024" summary="JS_2 fixes">
-      <created>1507712793219</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1507712793219</updated>
-    </task>
-    <task id="LOCAL-00025" summary="JS_2 fixes">
-      <created>1507712860396</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1507712860396</updated>
+      <workItem from="1515440276011" duration="5233000" />
     </task>
     <task id="LOCAL-00026" summary="JS_2 fixes">
       <created>1507712910086</created>
@@ -781,11 +773,25 @@
       <option name="project" value="LOCAL" />
       <updated>1515441184128</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="ajax scroll - fixes">
+      <created>1515481054257</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1515481054257</updated>
+    </task>
+    <task id="LOCAL-00074" summary="ajax search - fixes">
+      <created>1515488877552</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1515488877552</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358079000" />
+    <option name="totallyTimeSpent" value="359744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -832,7 +838,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="JS_2 Added" />
     <MESSAGE value="JS_2 fixes" />
     <MESSAGE value="JS_Objects added" />
     <MESSAGE value="JS_Objects 1-st task refactoring" />
@@ -856,6 +861,7 @@
     <MESSAGE value="ajax scroll - in progress" />
     <MESSAGE value="ajax scroll - done" />
     <MESSAGE value="es6&#10;tic-tac-toe - in progress" />
+    <MESSAGE value="ajax scroll - fixes" />
     <MESSAGE value="ajax search - fixes" />
     <option name="LAST_COMMIT_MESSAGE" value="ajax search - fixes" />
   </component>
@@ -1007,30 +1013,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/search/search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="788">
-          <caret line="67" column="24" lean-forward="false" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/search/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/es6/script_17.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -1079,18 +1061,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.html">
+    <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="27" lean-forward="true" selection-start-line="18" selection-start-column="27" selection-end-line="19" selection-end-column="28" />
+        <state relative-caret-position="242">
+          <caret line="11" column="52" lean-forward="true" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.js">
+    <entry file="file://$PROJECT_DIR$/ajax/search/search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        <state relative-caret-position="682">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/search/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/scroll/scroll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding />
         </state>
       </provider>
