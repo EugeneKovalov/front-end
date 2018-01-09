@@ -1,4 +1,3 @@
-
 function findHint() {
     let str = document.getElementById('search').value;
     if (str.length === 0) {
@@ -51,5 +50,5 @@ function details() {
 }
 
 document.getElementById('search').addEventListener('keyup', function () {
-    setInterval(findHint, 500);
+    setTimeout(findHint, 1500);
 });
