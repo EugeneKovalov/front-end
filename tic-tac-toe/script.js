@@ -1,15 +1,27 @@
-let cells = document.getElementsByClassName('ttt-game');
-let cellArray = [];
+const cellArray = document.getElementsByClassName('ttt-game');
+const winConditions = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6]
+]
+let player = 'X'
 
-for (let i = 0, j = 0; i < cells.length; i++) {
-    if ((i+1) % 3 === 0) {
-        cellArray.push([]);
+const playerMove = (e) => {
+    console.log(e.srcElement);
+    e.target.innerText = player;
+}
 
-        cellArray[j][0] = cells[i-2];
-        cellArray[j][1] = cells[i-1];
-        cellArray[j][2] = cells[i];
-        j++;
+const start = () => {
+    for (let i = 0; i < cellArray.length; i++) {
+        cellArray[i].addEventListener('click', playerMove)
     }
 }
 
-console.log(cellArray);
+start();
+
+document.getElementById('replay').addEventListener('click', start);
