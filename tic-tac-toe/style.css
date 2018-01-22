@@ -3,7 +3,12 @@ h1 {
 }
 
 table {
-    margin: auto;
+    margin: 0 auto;
+}
+
+#game {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 td {

@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Cache-Control" content="no-cache">
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 </head>
 <body>
-<h1>Tic Tac Toe</h1>
-<table>
+<div class="container">
+    <div class="card text-center">
+        <div class="card-header">
+            Tic Tac Toe
+        </div>
+        <div class="card-block">
+            <button class="btn btn-primary">Easy</button>
+            <button class="btn btn-primary">Hard</button>
+        </div>
+    </div>
+<table id="game">
     <tr>
         <td class="ttt-game"></td>
         <td class="vertical ttt-game"></td>
@@ -26,8 +35,12 @@
     </tr>
 </table>
 
-<button id="replay">Replay</button>
-
+    <div class="card text-center">
+        <div class="card-block">
+            <button id="replay" class="btn btn-primary">Replay</button>
+        </div>
+    </div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
 const cellArray = document.getElementsByClassName('ttt-game');
+
 const winConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -9,7 +10,9 @@ const winConditions = [
     [0, 4, 8],
     [2, 4, 6]
 ]
-let player = 'X'
+
+let player = 'X';
+let ai = 'O';
 
 const playerMove = (e) => {
     console.log(e.srcElement);
@@ -17,9 +20,18 @@ const playerMove = (e) => {
 }
 
 const start = () => {
+    swap();
+
     for (let i = 0; i < cellArray.length; i++) {
+        cellArray[i].innerText = '';
         cellArray[i].addEventListener('click', playerMove)
     }
+}
+
+function swap() {
+    let tmp = player;
+    player = ai;
+    ai = tmp;
 }
 
 start();
