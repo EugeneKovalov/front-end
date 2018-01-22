@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 </head>
 <body>
+
 <div class="container">
     <div class="card text-center">
         <div class="card-header">
             Tic Tac Toe
         </div>
         <div class="card-block">
-            <button class="btn btn-primary">Easy</button>
-            <button class="btn btn-primary">Hard</button>
+            <button id="easy-start" class="btn btn-primary">Easy</button>
+            <button id="hard-start" class="btn btn-primary">Hard</button>
         </div>
     </div>
-<table id="game">
+
+<table id="field">
     <tr>
         <td class="ttt-game"></td>
         <td class="vertical ttt-game"></td>
@@ -35,7 +37,7 @@
     </tr>
 </table>
 
-    <div class="card text-center">
+    <div id="footer" class="card text-center">
         <div class="card-block">
             <button id="replay" class="btn btn-primary">Replay</button>
         </div>

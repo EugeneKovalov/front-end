@@ -1,4 +1,6 @@
 const cellArray = document.getElementsByClassName('ttt-game');
+let footer = document.getElementById('footer');
+let field = document.getElementById('field');
 
 const winConditions = [
     [0, 1, 2],
@@ -19,8 +21,11 @@ const playerMove = (e) => {
     e.target.innerText = player;
 }
 
-const start = () => {
+let init = () => {
     swap();
+
+    footer.style.visibility = 'hidden';
+    field.style.display = 'none';
 
     for (let i = 0; i < cellArray.length; i++) {
         cellArray[i].innerText = '';
@@ -34,6 +39,18 @@ function swap() {
     ai = tmp;
 }
 
-start();
+function easyGame() {
+    footer.style.visibility = 'visible';
+    field.style.display = 'table';
+}
 
-document.getElementById('replay').addEventListener('click', start);
+function hardGame() {
+    footer.style.visibility = 'visible';
+    field.style.display = 'table';
+}
+
+init();
+
+document.getElementById('replay').addEventListener('click', init);
+document.getElementById('easy-start').addEventListener('click', easyGame);
+document.getElementById('hard-start').addEventListener('click', hardGame);

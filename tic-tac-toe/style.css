@@ -6,11 +6,6 @@ table {
     margin: 0 auto;
 }
 
-#game {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 td {
     width: 100px;
     height: 100px;
@@ -26,4 +21,9 @@ td {
 .horizontal {
     border-bottom: solid 1px;
     border-top: solid 1px;
+}
+
+#field {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
