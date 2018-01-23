@@ -1,6 +1,11 @@
-const cellArray = document.getElementsByClassName('ttt-game');
+const cellCollection = document.getElementsByClassName('ttt-game');
+const easyBtn = document.getElementById('easy-start');
+const hardBtn = document.getElementById('hard-start');
+
 let footer = document.getElementById('footer');
 let field = document.getElementById('field');
+let player = 'X';
+let ai = 'O';
 
 const winConditions = [
     [0, 1, 2],
@@ -13,23 +18,17 @@ const winConditions = [
     [2, 4, 6]
 ]
 
-let player = 'X';
-let ai = 'O';
-
-const playerMove = (e) => {
-    console.log(e.srcElement);
-    e.target.innerText = player;
-}
-
 let init = () => {
     swap();
 
     footer.style.visibility = 'hidden';
     field.style.display = 'none';
 
-    for (let i = 0; i < cellArray.length; i++) {
-        cellArray[i].innerText = '';
-        cellArray[i].addEventListener('click', playerMove)
+    easyBtn.style.visibility = 'visible';
+    hardBtn.style.visibility = 'visible';
+
+    for (let i = 0; i < cellCollection.length; i++) {
+        cellCollection[i].innerText = '';
     }
 }
 
@@ -39,18 +38,82 @@ function swap() {
     ai = tmp;
 }
 
-function easyGame() {
+function setup(turn) {
     footer.style.visibility = 'visible';
     field.style.display = 'table';
+
+    for (let i = 0; i < cellCollection.length; i++) {
+        cellCollection[i].addEventListener('click', turn);
+    }
+}
+
+const checkConditions = () => {
+    for (let i = 0; i < winConditions.length; i++) {
+        const winCond = winConditions[i];
+
+        let moves = winCond.map((pos) => {
+            return cellCollection[pos].textContent;
+        });
+
+        if (moves[2] !== '' && moves.every((val, i, arr) => val === arr[0])) {
+            if (checkConditions && moves[0] === player) {
+                alert('U WIN! Game Ended. Push replay button');
+                document.getElementById('easy-start').style.visibility = 'hidden';
+                document.getElementById('hard-start').style.visibility = 'hidden';
+                field.style.display = 'none';
+                return;
+            } else {
+                alert('U LOOSE! Game Ended. Push replay button');
+                field.style.display = 'none';
+                return;
+            }
+        }
+    }
+
+    let cellArray = Array.from(cellCollection);
+    if (cellArray.every((val, i, arr) => val.textContent !== '')) {
+        alert('DRAW!!! Game Ended. Push replay button');
+    }
+}
+
+function easyGame() {
+    const turn = (e) => {
+        if (e.target.innerText === '') {
+            e.target.innerText = player;
+
+            for (let i = 0; i < cellCollection.length; i++) {
+                if (cellCollection[i].innerText === '') {
+                    cellCollection[i].innerText = ai;
+                    break;
+                }
+            }
+            checkConditions();
+        }
+    }
+
+    setup(turn);
 }
 
 function hardGame() {
-    footer.style.visibility = 'visible';
-    field.style.display = 'table';
+    const turn = (e) => {
+        if (e.target.innerText === '') {
+            e.target.innerText = player;
+
+            for (let i = 0; i < cellCollection.length; i++) {
+                if (cellCollection[i].innerText === '') {
+                    cellCollection[i].innerText = ai;
+                    break;
+                }
+            }
+            checkConditions();
+        }
+    }
+
+    setup(turn);
 }
 
 init();
 
 document.getElementById('replay').addEventListener('click', init);
-document.getElementById('easy-start').addEventListener('click', easyGame);
-document.getElementById('hard-start').addEventListener('click', hardGame);
+easyBtn.addEventListener('click', easyGame);
+hardBtn.addEventListener('click', hardGame);
