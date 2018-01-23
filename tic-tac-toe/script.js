@@ -98,14 +98,66 @@ function hardGame() {
     const turn = (e) => {
         if (e.target.innerText === '') {
             e.target.innerText = player;
+            let aiTurn = {
+                id: null,
+                lvl: 3
+            };
 
-            for (let i = 0; i < cellCollection.length; i++) {
-                if (cellCollection[i].innerText === '') {
-                    cellCollection[i].innerText = ai;
-                    break;
+            for (let i = 0; i < winConditions.length; i++) {
+                const winCond = winConditions[i];
+
+                let moves = [{}];
+                moves = winCond.map((pos) => {
+                    return {
+                        id: cellCollection[pos].id,
+                        number: cellCollection[pos].textContent
+                    };
+                });
+
+                if (moves[0].number === player && moves[1].number === player ||
+                    moves[0].number === player && moves[2].number === player ||
+                    moves[1].number === player && moves[2].number === player ) {
+
+                    for (let j = 0; j < moves.length; j++) {
+                        if (moves[j].number === '') {
+                            console.log('1');
+                            aiTurn.id = moves[j].id;
+                            aiTurn.lvl = 1;
+                            break;
+                        }
+                    }
+                } else if (moves[0].number === ai && moves[1].number === ai ||
+                    moves[0].number === ai && moves[2].number === ai ||
+                    moves[1].number === ai && moves[2].number === ai ) {
+
+                    for (let j = 0; j < moves.length; j++) {
+                        if (moves[j].number === '') {
+                            if (aiTurn.lvl > 1) {
+                                aiTurn.id = moves[j].id;
+                                aiTurn.lvl = 2;
+                            }
+                            break;
+                        }
+                    }
+                } else if (moves[0].number === ai || moves[0].number === '' &&
+                    moves[1].number === ai || moves[1].number === '' &&
+                    moves[2].number === ai || moves[2].number === '') {
+
+                    for (let j = 0; j < moves.length; j++) {
+                        if (moves[j].number === '') {
+                            console.log('3');
+                            if (aiTurn.lvl > 2) {
+                                aiTurn.id = moves[j].id;
+                                aiTurn.lvl = 3;
+                            }
+                            break;
+                        }
+                    }
                 }
             }
             checkConditions();
+
+            cellCollection[aiTurn.id].innerText = ai;
         }
     }
 
