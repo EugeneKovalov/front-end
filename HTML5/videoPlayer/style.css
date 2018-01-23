@@ -1,0 +1,16 @@
+#library {
+    background-color: #2b542c;
+}
+
+#video-player {
+    background-color: #843534;
+}
+
+#playlist {
+    background-color: #245269;
+}
+
+#main {
+    margin: 5px;
+    height: 600px;
+}
