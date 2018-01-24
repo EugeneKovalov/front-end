@@ -7,7 +7,6 @@ const btnPlayIcon = btnPlay.querySelector('.fa');
 const btnForward = document.querySelector('.btn-forward');
 const btnReset = document.querySelector('.btn-reset');
 const btnStop = document.querySelector('.btn-stop');
-const progressBar = document.querySelector('.progress-bar');
 const progressBarFill = document.querySelector('.progress-bar-fill');
 const videoElement = document.querySelector('.video-element');
 
@@ -53,6 +52,8 @@ const playPauseVideo = () => {
 const restartVideo = () => {
     videoElement.currentTime = 0;
     btnPlay.removeAttribute('hidden');
+    btnPlayIcon.classList.remove('fa-pause');
+    btnPlayIcon.classList.add('fa-play');
     btnReset.setAttribute('hidden', 'true');
 }
 
@@ -112,15 +113,15 @@ const play = () => {
 
 toLibrary();
 
-btnBackward.addEventListener('click', moveBackward, false);
-btnFullscreen.addEventListener('click', fullscreen, false);
-btnMute.addEventListener('click', mute, false);
-btnPlay.addEventListener('click', playPauseVideo, false);
-btnForward.addEventListener('click', moveForward, false);
-btnReset.addEventListener('click', restartVideo, false);
-btnStop.addEventListener('click', stopVideo, false);
+btnBackward.addEventListener('click', moveBackward);
+btnFullscreen.addEventListener('click', fullscreen);
+btnMute.addEventListener('click', mute);
+btnPlay.addEventListener('click', playPauseVideo);
+btnForward.addEventListener('click', moveForward);
+btnReset.addEventListener('click', restartVideo);
+btnStop.addEventListener('click', stopVideo);
 videoElement.addEventListener('ended', () => {
     btnPlay.setAttribute('hidden', 'true');
     btnReset.removeAttribute('hidden');
-}, false);
-videoElement.addEventListener('timeupdate', updateProgress, false);
+});
+videoElement.addEventListener('timeupdate', updateProgress);
