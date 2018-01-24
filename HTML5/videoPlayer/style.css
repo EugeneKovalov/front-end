@@ -14,3 +14,52 @@
     margin: 5px;
     height: 600px;
 }
+
+video {
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.video-controls {
+    padding: 7px;
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.video-wrapper:focus > video + .video-controls,
+.video-wrapper:hover > video + .video-controls {
+    bottom: 12px;
+    z-index: 2;
+}
+
+.btn {
+    padding: 5px 0;
+    width: 31px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    -webkit-transition: opacity .175s ease-in;
+    transition: opacity .175s ease-in;
+}
+.btn:focus {
+    outline: 0;
+}
+.btn:hover {
+    opacity: .10;
+}
+
+.progress-bar {
+    background-color: transparent !important;
+}
+.progress-bar-fill {
+    width: 0;
+    height: 4px;
+    background-color: #e74c3c;
+    -webkit-transition: width .35s linear;
+    transition: width .35s linear;
+}
