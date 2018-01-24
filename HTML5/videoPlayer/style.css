@@ -34,6 +34,14 @@ video {
     z-index: 2;
 }
 
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none
+}
+
 .btn {
     padding: 5px 0;
     font-size: 18px;

@@ -70,14 +70,15 @@ const updateProgress = () => {
 
 let videos = [
     {
-  name: '766601639.mp4'
-},
+        name: '766601639.mp4'
+    },
     {
-  name: '775691538.mp4'
-},
+        name: '775691538.mp4'
+    },
     {
-  name: '796814664.mp4'
-}];
+        name: '796814664.mp4'
+    }
+];
 
 let playlist = [];
 
@@ -85,30 +86,24 @@ const toLibrary = () => {
     videos.forEach(function (elem) {
         let ul = document.getElementById('library-collection');
         let li = document.createElement('li');
-        // li.id = '' + i;
-        li.className = 'list-group-item list-group-item-action';
+        li.className = 'list-group-item list-group-item-action unselectable';
         li.innerText = elem.name;
         li.addEventListener('click', toPlaylist);
-
         ul.appendChild(li);
     });
 };
 
 const toPlaylist = (e) => {
-    // playlist.push({id: playlist.length++, name: e.target.innerText});
-    // console.log(playlist);
-
     let ul = document.getElementById('playlist-collection');
     let li = document.createElement('li');
-    li.className = 'list-group-item list-group-item-action';
+    li.className = 'list-group-item list-group-item-action unselectable';
     li.innerText = e.target.innerText;
-    li.addEventListener('click', play);
-
+    li.addEventListener('dblclick', play);
     ul.appendChild(li);
 };
 
-const play = () => {
-
+const play = (e) => {
+    videoElement.src = 'media/' + e.target.innerText;
 }
 
 toLibrary();

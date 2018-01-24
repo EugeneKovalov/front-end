@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="">
+    <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="media-player - in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/HTML5/videoPlayer/script.js" afterPath="$PROJECT_DIR$/HTML5/videoPlayer/script.js" />
+      <change beforePath="$PROJECT_DIR$/HTML5/videoPlayer/style.css" afterPath="$PROJECT_DIR$/HTML5/videoPlayer/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +28,8 @@
       <file leaf-file-name="info.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/info.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="14" column="447" lean-forward="false" selection-start-line="14" selection-start-column="447" selection-end-line="14" selection-end-column="447" />
+            <state relative-caret-position="323">
+              <caret line="14" column="564" lean-forward="true" selection-start-line="14" selection-start-column="564" selection-end-line="14" selection-end-column="564" />
               <folding />
             </state>
           </provider>
@@ -37,8 +38,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="244">
+              <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -47,8 +48,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="244">
+              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -57,8 +58,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="329">
+              <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -198,8 +199,8 @@
         <option value="$PROJECT_DIR$/tic-tac-toe/index.html" />
         <option value="$PROJECT_DIR$/tic-tac-toe/script.js" />
         <option value="$PROJECT_DIR$/HTML5/videoPlayer/info.txt" />
-        <option value="$PROJECT_DIR$/HTML5/videoPlayer/style.css" />
         <option value="$PROJECT_DIR$/HTML5/videoPlayer/index.html" />
+        <option value="$PROJECT_DIR$/HTML5/videoPlayer/style.css" />
         <option value="$PROJECT_DIR$/HTML5/videoPlayer/script.js" />
       </list>
     </option>
@@ -452,14 +453,7 @@
       <workItem from="1515858065983" duration="897000" />
       <workItem from="1516634898304" duration="274000" />
       <workItem from="1516635192959" duration="15617000" />
-      <workItem from="1516796766637" duration="8223000" />
-    </task>
-    <task id="LOCAL-00037" summary="JS_Objects 2-nd task fixed">
-      <created>1509085435197</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1509085435197</updated>
+      <workItem from="1516796766637" duration="9125000" />
     </task>
     <task id="LOCAL-00038" summary="js_oop">
       <created>1511204229693</created>
@@ -797,11 +791,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516821713216</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="media-player - in progress">
+      <created>1516822924735</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1516822924735</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="404023000" />
+    <option name="totallyTimeSpent" value="404925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1096,34 +1097,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/info.txt">
+    <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="14" column="447" lean-forward="false" selection-start-line="14" selection-start-column="447" selection-end-line="14" selection-end-column="447" />
+        <state relative-caret-position="244">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/style.css">
+    <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/info.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="323">
+          <caret line="14" column="564" lean-forward="true" selection-start-line="14" selection-start-column="564" selection-end-line="14" selection-end-column="564" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="26" column="14" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        <state relative-caret-position="244">
+          <caret line="31" column="39" lean-forward="false" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="329">
+          <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
           <folding />
         </state>
       </provider>
