@@ -104,6 +104,7 @@ const toPlaylist = (e) => {
 
 const play = (e) => {
     videoElement.src = 'media/' + e.target.innerText;
+    playPauseVideo();
 }
 
 toLibrary();

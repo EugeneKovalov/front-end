@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="media-player - in progress">
+    <list default="true" id="b9380011-eb9a-496b-a22f-5ec0b817e210" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/HTML5/videoPlayer/script.js" afterPath="$PROJECT_DIR$/HTML5/videoPlayer/script.js" />
-      <change beforePath="$PROJECT_DIR$/HTML5/videoPlayer/style.css" afterPath="$PROJECT_DIR$/HTML5/videoPlayer/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,8 +57,8 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
+            <state relative-caret-position="263">
+              <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -453,14 +452,7 @@
       <workItem from="1515858065983" duration="897000" />
       <workItem from="1516634898304" duration="274000" />
       <workItem from="1516635192959" duration="15617000" />
-      <workItem from="1516796766637" duration="9125000" />
-    </task>
-    <task id="LOCAL-00038" summary="js_oop">
-      <created>1511204229693</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1511204229693</updated>
+      <workItem from="1516796766637" duration="9742000" />
     </task>
     <task id="LOCAL-00039" summary="js_oop Prototype">
       <created>1511249375619</created>
@@ -798,11 +790,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516822924735</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="media-player - in progress">
+      <created>1516823841667</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1516823841667</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="404925000" />
+    <option name="totallyTimeSpent" value="405542000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1123,8 +1122,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML5/videoPlayer/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="47" selection-end-line="111" selection-end-column="47" />
+        <state relative-caret-position="263">
+          <caret line="104" column="21" lean-forward="true" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
           <folding />
         </state>
       </provider>
