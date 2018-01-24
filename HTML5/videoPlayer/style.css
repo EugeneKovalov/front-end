@@ -36,14 +36,12 @@ video {
 
 .btn {
     padding: 5px 0;
-    width: 31px;
     font-size: 18px;
     text-align: center;
     color: #fff;
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    -webkit-transition: opacity .175s ease-in;
     transition: opacity .175s ease-in;
 }
 .btn:focus {
@@ -56,6 +54,7 @@ video {
 .progress-bar {
     background-color: transparent !important;
 }
+
 .progress-bar-fill {
     width: 0;
     height: 4px;

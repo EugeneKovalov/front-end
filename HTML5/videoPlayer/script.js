@@ -1,5 +1,5 @@
 const btnBackward = document.querySelector('.btn-backward');
-const btnExpand = document.querySelector('.btn-expand');
+const btnFullscreen = document.querySelector('.btn-expand');
 const btnMute = document.querySelector('.btn-mute');
 const btnMuteIcon = btnMute.querySelector('.fa');
 const btnPlay = document.querySelector('.btn-play');
@@ -11,7 +11,7 @@ const progressBar = document.querySelector('.progress-bar');
 const progressBarFill = document.querySelector('.progress-bar-fill');
 const videoElement = document.querySelector('.video-element');
 
-const expandVideo = () => {
+const fullscreen = () => {
     if (videoElement.requestFullscreen) {
         videoElement.requestFullscreen();
     } else if (videoElement.webkitRequestFullscreen) {
@@ -20,21 +20,19 @@ const expandVideo = () => {
 }
 
 const moveBackward = () => {
-    videoElement.currentTime -= 2;
+    videoElement.currentTime -= 3;
 }
 const moveForward = () => {
-    videoElement.currentTime += 2;
+    videoElement.currentTime += 3;
 }
 
 const mute = () => {
     if (videoElement.muted) {
         videoElement.muted = false;
-
         btnMuteIcon.classList.remove('fa-volume-up');
         btnMuteIcon.classList.add('fa-volume-off');
     } else {
         videoElement.muted = true;
-
         btnMuteIcon.classList.remove('fa-volume-off');
         btnMuteIcon.classList.add('fa-volume-up');
     }
@@ -43,12 +41,10 @@ const mute = () => {
 const playPauseVideo = () => {
     if (videoElement.paused) {
         videoElement.play();
-
         btnPlayIcon.classList.remove('fa-play');
         btnPlayIcon.classList.add('fa-pause');
     } else {
         videoElement.pause();
-
         btnPlayIcon.classList.remove('fa-pause');
         btnPlayIcon.classList.add('fa-play');
     }
@@ -56,7 +52,6 @@ const playPauseVideo = () => {
 
 const restartVideo = () => {
     videoElement.currentTime = 0;
-
     btnPlay.removeAttribute('hidden');
     btnReset.setAttribute('hidden', 'true');
 }
@@ -69,41 +64,56 @@ const stopVideo = () => {
 }
 
 const updateProgress = () => {
-    let value = (100 / videoElement.duration) * videoElement.currentTime;
-
-    progressBarFill.style.width = value + '%';
+    progressBarFill.style.width = (100 / videoElement.duration) * videoElement.currentTime + '%';
 }
 
 let videos = [
     {
-  name: '766601639'
+  name: '766601639.mp4'
 },
     {
-  name: '775691538'
+  name: '775691538.mp4'
 },
     {
-  name: '796814664'
-}]
+  name: '796814664.mp4'
+}];
 
-const library = () => {
-    let ul = document.createElement('ul');
-    ul.className = 'list-group';
+let playlist = [];
 
-    videos.forEach(function (elem, i) {
+const toLibrary = () => {
+    videos.forEach(function (elem) {
+        let ul = document.getElementById('library-collection');
         let li = document.createElement('li');
-        li.id = '' + i;
-        li.className = 'list-group-item';
+        // li.id = '' + i;
+        li.className = 'list-group-item list-group-item-action';
         li.innerText = elem.name;
+        li.addEventListener('click', toPlaylist);
 
         ul.appendChild(li);
-        document.getElementById('library').appendChild(ul);
-    })
+    });
 };
 
-library();
+const toPlaylist = (e) => {
+    // playlist.push({id: playlist.length++, name: e.target.innerText});
+    // console.log(playlist);
+
+    let ul = document.getElementById('playlist-collection');
+    let li = document.createElement('li');
+    li.className = 'list-group-item list-group-item-action';
+    li.innerText = e.target.innerText;
+    li.addEventListener('click', play);
+
+    ul.appendChild(li);
+};
+
+const play = () => {
+
+}
+
+toLibrary();
 
 btnBackward.addEventListener('click', moveBackward, false);
-btnExpand.addEventListener('click', expandVideo, false);
+btnFullscreen.addEventListener('click', fullscreen, false);
 btnMute.addEventListener('click', mute, false);
 btnPlay.addEventListener('click', playPauseVideo, false);
 btnForward.addEventListener('click', moveForward, false);
