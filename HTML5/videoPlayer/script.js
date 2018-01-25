@@ -21,6 +21,7 @@ const fullscreen = () => {
 const moveBackward = () => {
     videoElement.currentTime -= 3;
 }
+
 const moveForward = () => {
     videoElement.currentTime += 3;
 }
@@ -80,8 +81,6 @@ let videos = [
     }
 ];
 
-let playlist = [];
-
 const toLibrary = () => {
     videos.forEach(function (elem) {
         let ul = document.getElementById('library-collection');
@@ -96,15 +95,30 @@ const toLibrary = () => {
 const toPlaylist = (e) => {
     let ul = document.getElementById('playlist-collection');
     let li = document.createElement('li');
+    let btnRemove = document.createElement('span');
+    btnRemove.className = 'fa fa-trash-o';
+    btnRemove.style.paddingLeft = '20%';
+    btnRemove.addEventListener('click', remove);
     li.className = 'list-group-item list-group-item-action unselectable';
+    li.id = randId();
     li.innerText = e.target.innerText;
+
+    li.appendChild(btnRemove);
     li.addEventListener('dblclick', play);
     ul.appendChild(li);
 };
 
+const remove = (e) => {
+    document.getElementById(e.target.offsetParent.id).remove();
+}
+
 const play = (e) => {
     videoElement.src = 'media/' + e.target.innerText;
     playPauseVideo();
+}
+
+function randId() {
+    return Math.random().toString(36).substr(2, 10);
 }
 
 toLibrary();
