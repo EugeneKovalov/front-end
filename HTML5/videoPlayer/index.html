@@ -18,59 +18,61 @@
     </div>
 
     <div id="main" class="row">
-    <div id="library" class="col-md-3">
-        <br>
-        <div class="card text-center">
-            <div class="card-header">
-                Library
+        <div id="library" class="col-md-3">
+            <br>
+            <div class="card text-center">
+                <div class="card-header">
+                    Library
+                </div>
             </div>
+            <ul id="library-collection" class="list-group"></ul>
         </div>
-        <ul id="library-collection" class="list-group"></ul>
-    </div>
-    <div id="video-player" class="col-md-6">
-        <div class="video">
-            <video class="video-element">
-                <source src="media/766601639.mp4" type="video/mp4">
-            </video>
+        <div id="video-player" class="col-md-6">
+            <div class="video">
+                <video class="video-element">
+                    <source src="media/766601639.mp4" type="video/mp4">
+                </video>
 
-            <div class="video-controls">
-                <button class="btn btn-backward">
-                    <span class="fa fa-backward"></span>
-                </button>
-                <button class="btn btn-play">
-                    <span class="fa fa-play"></span>
-                </button>
-                <button class="btn btn-forward">
-                    <span class="fa fa-forward"></span>
-                </button>
-                <button class="btn btn-stop">
-                    <span class="fa fa-stop"></span>
-                </button>
-                <button class="btn btn-reset" hidden>
-                    <span class="fa fa-undo"></span>
-                </button>
-                <button class="btn btn-mute">
-                    <span class="fa fa-volume-off"></span>
-                </button>
-                <button class="btn btn-expand">
-                    <span class="fa fa-expand"></span>
-                </button>
-            </div>
+                <div class="video-controls">
+                    <button class="btn btn-backward">
+                        <span class="fa fa-backward"></span>
+                    </button>
+                    <button class="btn btn-play">
+                        <span class="fa fa-play"></span>
+                    </button>
+                    <button class="btn btn-forward">
+                        <span class="fa fa-forward"></span>
+                    </button>
+                    <button class="btn btn-stop">
+                        <span class="fa fa-stop"></span>
+                    </button>
+                    <button class="btn btn-reset" hidden>
+                        <span class="fa fa-undo"></span>
+                    </button>
+                    <button class="btn btn-mute">
+                        <span class="fa fa-volume-off"></span>
+                    </button>
+                    <button class="btn btn-expand">
+                        <span class="fa fa-expand"></span>
+                    </button>
+                </div>
 
-            <div class="progress-bar">
-                <div class="progress-bar-fill"></div>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill"></div>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="playlist" class="col-md-3">
-        <br>
-        <div class="card text-center">
-            <div class="card-header">
-                Playlist
+        <div id="playlist" class="col-md-3">
+            <br>
+            <div class="card text-center">
+                <div class="card-header">
+                    Playlist
+                </div>
             </div>
+            <ul id="playlist-collection" class="list-group"></ul>
+            <button id="playlist-play-order" class="btn btn-secondary btn-sm">Play in Order</button>
+            <button id="playlist-play-random" class="btn btn-secondary btn-sm">Play Random</button>
         </div>
-        <ul id="playlist-collection" class="list-group"></ul>
-    </div>
     </div>
 </div>
 

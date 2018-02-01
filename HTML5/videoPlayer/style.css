@@ -28,12 +28,6 @@ video {
     background: rgba(255, 255, 255, 0.35);
 }
 
-.video-wrapper:focus > video + .video-controls,
-.video-wrapper:hover > video + .video-controls {
-    bottom: 12px;
-    z-index: 2;
-}
-
 .unselectable {
     -moz-user-select: -moz-none;
     -khtml-user-select: none;
@@ -50,13 +44,6 @@ video {
     background-color: transparent;
     border: 0;
     cursor: pointer;
-    transition: opacity .175s ease-in;
-}
-.btn:focus {
-    outline: 0;
-}
-.btn:hover {
-    opacity: .10;
 }
 
 .progress-bar {
@@ -67,6 +54,5 @@ video {
     width: 0;
     height: 4px;
     background-color: #e74c3c;
-    -webkit-transition: width .35s linear;
     transition: width .35s linear;
 }
