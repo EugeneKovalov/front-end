@@ -1,6 +1,5 @@
 (function () {
     const btnBackward = document.querySelector('.btn-backward');
-    const btnFullscreen = document.querySelector('.btn-expand');
     const btnMute = document.querySelector('.btn-mute');
     const btnMuteIcon = btnMute.querySelector('.fa');
     const btnPlay = document.querySelector('.btn-play');
@@ -12,16 +11,8 @@
     const videoElement = document.querySelector('.video-element');
     let videos = [{ name: '766601639.mp4' }, { name: '775691538.mp4' }, { name: '796814664.mp4' }];
 
-    const fullscreen = () => {
-        if (videoElement.requestFullscreen) {
-            videoElement.requestFullscreen();
-        } else if (videoElement.webkitRequestFullscreen) {
-            videoElement.webkitRequestFullscreen();
-        }
-    }
     const moveBackward = () => {
         videoElement.currentTime -= 3;
-
     }
     const moveForward = () => {
         videoElement.currentTime += 3;
@@ -97,48 +88,21 @@
         }
     }
     const playListPlay = (playlist) => {
-        let i = 1;
-        if (i < playlist.length) {
-            videoElement.src = 'media/' + playlist[i - 1].innerText;
-            playPauseVideo();
-
-            videoElement.addEventListener('ended', () => {
-                if (i < playlist.length) {
-                    videoElement.src = 'media/' + playlist[i].innerText;
-                    playPauseVideo();
-                    i++;
-                }
-            });
-        }
+       playlistStart(playlist);
     }
     const playListPlayRandom = (playlist) => {
-        let i = 1;
-
         function shuffle(playlist) {
-            let i = playlist.length, temp, index;
-            while (i > 0) {
-                index = Math.floor(Math.random() * i);
-                i--;
-                temp = playlist[i];
-                playlist[i] = playlist[index];
+            let j = playlist.length, temp, index;
+            while (j > 0) {
+                index = Math.floor(Math.random() * j);
+                j--;
+                temp = playlist[j];
+                playlist[j] = playlist[index];
                 playlist[index] = temp;
             }
             return playlist;
         }
-        playlist = shuffle(playlist);
-
-        if (i < playlist.length) {
-            videoElement.src = 'media/' + playlist[i - 1].innerText;
-            playPauseVideo();
-
-            videoElement.addEventListener('ended', () => {
-                if (i < playlist.length) {
-                    videoElement.src = 'media/' + playlist[i].innerText;
-                    playPauseVideo();
-                    i++;
-                }
-            });
-        }
+        playlistStart(shuffle(playlist));
     }
     function randId() {
         return Math.random().toString(36).substr(2, 10);
@@ -149,10 +113,28 @@
             return Array.from(playlist.childNodes);
         }
     }
+    function playlistStart(playlist) {
+        let i = 1;
+        if (i < playlist.length) {
+            videoElement.src = 'media/' + playlist[i - 1].innerText;
+            playPauseVideo();
+
+            videoElement.addEventListener('ended', () => {
+                if (i < playlist.length) {
+                    btnPlay.removeAttribute('hidden');
+                    btnPlayIcon.classList.remove('fa-pause');
+                    btnPlayIcon.classList.add('fa-play');
+                    btnReset.setAttribute('hidden', 'true');
+                    videoElement.src = 'media/' + playlist[i].innerText;
+                    playPauseVideo();
+                    i++;
+                }
+            });
+        }
+    }
     toLibrary();
 
     btnBackward.addEventListener('click', moveBackward);
-    btnFullscreen.addEventListener('click', fullscreen);
     btnMute.addEventListener('click', mute);
     btnPlay.addEventListener('click', playPauseVideo);
     btnForward.addEventListener('click', moveForward);
@@ -168,5 +150,11 @@
     });
     document.getElementById('playlist-play-random').addEventListener('click', function () {
         playListPlayRandom(getPlaylist());
+    });
+    document.getElementById('playlist-clean').addEventListener('click', function () {
+        let playlist = document.getElementById('playlist-collection');
+        while (playlist.hasChildNodes()) {
+            playlist.removeChild(playlist.lastChild);
+        }
     });
 })();
